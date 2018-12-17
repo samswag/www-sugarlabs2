@@ -2767,12 +2767,7 @@ p {
   margin-right: 15px;
   width: 10px;
 }
-.owl-carousel .owl-pagination div.active {
-  background: #5C5C5C;
-  font-size: 32px;
-  display: inline-block;
-  border: 0px;
-}
+
 .owl-control .owl-page {
   cursor: pointer;
 }
@@ -2915,4 +2910,10 @@ p {
   display: block;
   color: #353241;
   font-weight: 600;
+}
+.owl-carousel .owl-pagination div.active {
+  background: #5C5C5C;
+  font-size: 32px;
+  display: inline-block;
+  border: 0px;
 }
