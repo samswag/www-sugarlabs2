@@ -2917,3 +2917,110 @@ p {
   display: inline-block;
   border: 0px;
 }
+.fullWidth{
+  width: 100% !important;
+}
+#testimonial {
+  padding: 100px 0;
+}
+ #testimonial .span1 {
+  width: 120px;
+  height: 120px;
+}
+.customMarPadCombo3{
+  margin-bottom:10px !important;
+  padding-bottom:10px !important;
+  padding-top:50px !important;
+  }
+  .section-title {
+    margin-bottom: 70px;
+  }
+  .section-title h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .section-title p {
+    font-family: 'Varela Round', sans-serif;
+    font-style: italic;
+    color: #666;
+  }
+  p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  #testimonial .testimonial-carousel {
+    text-align: center;
+    width: 75%;
+    /*border: 1px solid #DEDEDE;*/
+    border: 1px solid #000000;
+    padding: 24px;
+    margin: 0 auto;
+  }
+  #testimonial .testimonial-carousel img {
+    padding-bottom: 38px;
+  }
+  #testimonial .span1 {
+    width: 120px;
+    height: 120px;
+  }  
+  .customMargin4{
+    margin-bottom:15px !important;
+  }
+  .bt-raised {
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+}
+.btn-custom,
+.btn-link {
+    background-color: #655E7A;
+    color: #ffffff;
+}
+.bt {
+  font-family: 'Varela Round', sans-serif;
+    /*font-size: 16px;*/
+    padding: 10px 20px;
+    /*font-weight: 400;
+    text-transform: uppercase;*/
+    /*letter-spacing: inherit;*/
+    color: rgba(255, 255, 255, 0.87);
+    outline: 0;
+    outline-offset: 0;
+    border: 0;
+    border-radius: 2px;
+    -o-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+.bt-raised:active,
+.bt-raised.active,
+.bt-raised:active:focus,
+.bt-raised.active:focus {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.btn{border:0px solid transparent !important;}
+.btn-custom:hover,
+.btn-link:hover,
+.btn-custom:focus,
+.btn-link:focus {
+    background-color: #655E7A;
+    color: #ffffff;
+    opacity: 0.7;
+}
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus,
+.btn.active:focus {
+    outline: 0;
+    outline-offset: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+} 
