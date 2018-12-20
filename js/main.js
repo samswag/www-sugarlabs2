@@ -1,124 +1,118 @@
-$(document).ready(function(){
-    // Colour changing affect of logo
-    var COLORS = [['006E00', '78E600'], ['68008C', '78E600'],
-                  ['006E00', '00BEFF'], ['033CD2', '00BEFF'],
-                  ['6E008C', '00BEFF'], ['A00000', 'FF7800'],
-                  ['033CD2', 'FF64D2'], ['6E008C', 'FF64D2'],
-                  ['6E008C', 'FF7800'], ['033CD2', 'FF7800'],
-                  ['006E00', 'FFD732'], ['6E008C', 'FFD732']];
-    var color = Math.floor((Math.random() * 12));
-    var logoID = color + 1;
-    if (color < 10) {
-        logoID = "0" + logoID;
-    }
-    document.querySelector('#defaultIcon1').href = 'https://www.sugarlabs.org/assets/favicon_' + logoID + '.png';
-    var h = document.querySelector('.logo1').innerHTML;
-    h = h.replace(/033cd2/g, COLORS[color][0]);
-    h = h.replace(/78e600/g, COLORS[color][1]);
-    document.querySelector('.logo1').innerHTML = h;
-    if(document.getElementById("secondHeader").style.display!="none"){
-        var h = document.querySelector('.logo2').innerHTML;
-        h = h.replace(/033cd2/g, COLORS[color][0]);
-        h = h.replace(/78e600/g, COLORS[color][1]);
-        document.querySelector('.logo2').innerHTML = h;}
-    // Footer links collapse code
-    $( ".widget h4" ).click(
-        function() {
-            $(this).parent().toggleClass('active');
-    });
-    // Disabling code
-    // Opera 8.0+
-    var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-    // Firefox 1.0+
-    var isFirefox = typeof InstallTrigger !== 'undefined';
-    // Safari 3.0+ "[object HTMLElementConstructor]"
-    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-    // Internet Explorer 6-11
-    var isIE = /*@cc_on!@*/false || !!document.documentMode;
-    // Edge 20+
-    var isEdge = !isIE && !!window.StyleMedia;
-    // Chrome 1+
-    var isChrome = !!window.chrome && !!window.chrome.webstore;
-    var isOtherdevice= navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
-    var isSmallWidth=0;
-    if(window.innerWidth<768)
-    {
-        isSmallWidth=1;
-    }
-    if(isOpera || isFirefox || isSafari || isIE || isEdge || isChrome || isOtherdevice || isSmallWidth){
-        $('#loaderDiv').css('display', 'block');
-        $('#animationPart1').addClass('start');
-        $('#animationPart2').addClass('start');
-        $('#animationPart3').addClass('start');
-        if(isIE){
-            $('#navh2').css('display', 'block');
-            $('#navh3').css('display', 'block');
-        }
-        else{
-            $('#navh').css('display', 'block');
-            $('#navh1').css('display', 'block');
-        }
-    }
-    if(!isOpera && !isFirefox &&!isSafari && !isIE && !isEdge &&!isChrome &&!isOtherdevice &&!isSmallWidth){
-        $('#ftctn').css('display', 'none');
-        $('#myBtn2').css('display', 'none');
-        $('#navh2').css('display', 'block');
-        $('#navh').css('display', 'none');
-        $('#navh3').css('display', 'block');
-        $('#navh1').css('display', 'none');
-    }
-    // Slideshows code
+"use strict";
+jQuery(document).ready(function ($) {
 
-    $("#glimpse-slider").owlCarousel({
-        paginationSpeed : 500,
-        singleItem:true,
-        autoPlay: 3000,
+//for Preloader
+
+    $(window).load(function () {
+        $("#loading").fadeOut(500);
     });
-    $("#testimonial-slider1").owlCarousel({
-        paginationSpeed : 500,
-        singleItem:true,
-        autoPlay: 3000,
+
+
+    /*---------------------------------------------*
+     * Mobile menu
+     ---------------------------------------------*/
+    $('#navbar-menu').find('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: (target.offset().top - 80)
+                }, 1000);
+                if ($('.navbar-toggle').css('display') != 'none') {
+                    $(this).parents('.container').find(".navbar-toggle").trigger("click");
+                }
+                return false;
+            }
+        }
     });
-    $("#testimonial-slider2").owlCarousel({
-        paginationSpeed : 500,
-        singleItem:true,
-        autoPlay: 3000,
+
+
+
+    /*---------------------------------------------*
+     * WOW
+     ---------------------------------------------*/
+
+    var wow = new WOW({
+        mobile: false // trigger animations on mobile devices (default is true)
     });
-    $("#testimonial-slider3").owlCarousel({
-        paginationSpeed : 500,
-        singleItem:true,
-        autoPlay: 3000,
+    wow.init();
+
+// magnificPopup
+
+    $('.popup-img').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
     });
-    $("#testimonial-slider4").owlCarousel({
-        paginationSpeed : 500,
-        singleItem:true,
-        autoPlay: 3000,
+
+    $('.video-link').magnificPopup({
+        type: 'iframe'
     });
-    $("#testimonial-slider5").owlCarousel({
-        paginationSpeed : 500,
-        singleItem:true,
-        autoPlay: 3000,
+
+
+
+// slick slider active Home Page Tow
+    $(".hello_slid").slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: "<i class='icon icon-chevron-left nextprevleft'></i>",
+        nextArrow: "<i class='icon icon-chevron-right nextprevright'></i>",
+        autoplay: true,
+        autoplaySpeed: 2000
     });
-    $("#testimonial-slider6").owlCarousel({
-        paginationSpeed : 500,
-        singleItem:true,
-        autoPlay: 3000,
+    
+    
+    
+    $(".business_items").slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: "<i class='icon icon-chevron-left nextprevleft'></i>",
+        nextArrow: "<i class='icon icon-chevron-right nextprevright'></i>",
+        autoplay: true,
+        autoplaySpeed: 2000
     });
-    $("#testimonial-slider7").owlCarousel({
-        paginationSpeed : 500,
-        singleItem:true,
-        autoPlay: 3000,
+
+
+
+
+//---------------------------------------------
+// Scroll Up 
+//---------------------------------------------
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({scrollTop: 0}, 1000);
+        return false;
     });
-    $("#social-media-logos").owlCarousel({
-    	autoPlay: 3000,
-    	items : 5,
-    	itemsDesktop : [1199,5],
-    	itemsDesktopSmall : [979,5],
-    });
-    var fullHeight = function() {
-    	$('.js-fullheight').css('height', $(window).height());
-    	$(window).resize(function(){
-    		$('.js-fullheight').css('height', $(window).height());
-    	});
-    };
+
+
+
+
+
+
+
+
+
+
+
+    //End
+
 });
+
+$(document).ready(function () {
+    $("#waterwheel-carousel").waterwheelCarousel({
+      horizon: 110,
+      horizonOffset: -50,
+      horizonOffsetMultiplier: .7,
+      separation: 150,
+      edgeFadeEnabled: true
+    });
+  });
+
