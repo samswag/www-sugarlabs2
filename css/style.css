@@ -28,7 +28,6 @@ h2 {
 }
 
 
-
 h3 {
   font-size: 28px;
   font-weight: 300;
@@ -36,6 +35,7 @@ h3 {
 
 h4 {
   font-size: 18px;
+  font-weight: 400;
 }
 h5{
 text-transform: uppercase;
@@ -107,6 +107,8 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   text-transform: uppercase;
   border-radius: 0;
   transition: all 0.2s ease;
+  margin-right:70px;
+  padding: 12px 12px;
 }
 
 .btn-main.btn-icon i, .btn-icon.btn-transparent i, .btn-icon.btn-small i {
@@ -269,17 +271,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   font-weight: 600;
 }
 
-.section-title p {
-  font-style: italic;
-  color: #666;
-  font-family: "Volkhov", serif;
-}
 
-.section-subtitle {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
 
 .page-title {
   padding: 100px 0;
@@ -704,10 +696,7 @@ p {
   height: 100%;
   width: 100%;
 }
-.intro-img {
-  padding-top: 0px !important;
-  padding-bottom: 110px !important
-}
+
 .owl-carousel{
   position: relative;
   width: 100%;
@@ -752,31 +741,38 @@ p {
   padding-top: 35px;
   line-height: 27px;
   margin: 0;
+  color: rgba(70, 68, 83, 0.94);
 }
 .section-title h2 {
   text-transform: uppercase;
   font-size: 28px;
   font-weight: 600;
   text-align: center;
+  font-family: 'Varela Round', sans-serif;
 }
-
+.intro-img {
+  padding-top: 0px !important;
+  padding-bottom: 110px !important
+}
 #intro .section-title p {
   padding-top: 20px;
 }
 
-
 #intro .block p {
-  color: #7B7B7B;
+ color: rgba(70, 68, 83, 0.94);
   padding-top: 20px;
 }
 .section-title p {
   font-family: 'Varela Round', sans-serif;
   font-style: italic;
   text-align: center;
-  color: #666;
+  color: rgba(70, 68, 83, 0.94);
+
 }
 .customColor{
-  color: #000000 !important;
+  color: rgba(70, 68, 83, 0.94);
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
 }
 .customMargin7{
   margin-top:40px !important;
@@ -787,25 +783,11 @@ p {
 }
 .customMargin1{
   margin-bottom:30px !important;
-}
-
-#intro {
-  padding: 50px 0;
+  color: rgba(70, 68, 83, 0.94);
 }
 
 
-#intro {
-  padding: 50px 0;
-}
-#intro .block h2 {
-  padding-top: 35px;
-  line-height: 27px;
-  margin: 0;
-}
-#intro .block p {
-  color: #7B7B7B;
-  padding-top: 20px;
-}
+
 #intro .block iframe {
     width: 100%; /*the image width*/
         height: 350px;
@@ -824,7 +806,9 @@ p {
   padding-top: 20px;
 }
 
-
+#home {
+  padding: 50px;
+}
 .owl-carousel .owl-pagination div {
   border: 1px solid #1D1D1D;
   border-radius: 500px;
@@ -865,7 +849,7 @@ p {
   width: 100%;
   height: 100%;
   background: rgba(70, 68, 83, 0.94);
-  opacity: 0.8;
+  
 }
 #testimonial .counter-box li {
   width: 50%;
@@ -874,8 +858,26 @@ p {
   margin: 17px 0 30px;
 }
 #testimonial .counter-box li span {
-  color: #555;
+ color: white ;
+  font-family: ' Varela Round', sans-serif;
 }
+ .quotes {
+   color: white;
+ } 
+.yellow {
+  font-size: 48px;
+  color: yellow;
+  transform: rotate(11.3deg);
+  font-family: ' Varela Round', sans-serif;
+
+}
+
+.white{
+  color: white;
+  font-size: 28px;
+  font-family: ' Varela Round', sans-serif;
+}
+
 .customPadding4 {
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -896,13 +898,13 @@ p {
 }
 #testimonial .testimonial-carousel .user p {
   padding-bottom: 0;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
-  color: #353241;
+  color: white;
 }
 #testimonial .testimonial-carousel .user p span {
   display: block;
-  color: #353241;
+  color: white;
   font-weight: 600;
 }
 .owl-carousel .owl-pagination div.active {
@@ -951,13 +953,16 @@ p {
     padding: 24px;
     margin: 0 auto;
   }
-  #testimonial .testimonial-carousel img {
-    padding-bottom: 38px;
+  #testimonial .testimonial-carousel img{
   }
   #testimonial .span1 {
     width: 120px;
     height: 120px;
   }  
+  .span1{
+    vertical-align: middle;
+    margin-left: 10px;
+  }
   .customMargin4{
     margin-bottom:15px !important;
   }
@@ -1049,7 +1054,7 @@ p {
   color: #292929;
 }
 #about-us .icon{
-border-color: blue;
+border-color: rgba(70, 68, 83, 0.94);
   border-style: solid;
 }
 .round-border {
@@ -1067,7 +1072,7 @@ border-color: blue;
           transition: all .3s ease-in-out;
 }
 #about-us .single-about-content:hover .icon{
-  background: #d73e4d;
+  background: #655E7A;
 }
 .fa {
   display: inline-block;
@@ -1101,7 +1106,7 @@ color:#d73e4d;
   color: #292929;
   border-width: 1px;
   margin-top: 22px;
-  border-color: #d73e4d;
+  border-color: rgba(70, 68, 83, 0.94);
     border-style: solid;
 }
 .hvr-bounce-to-right {
@@ -1127,7 +1132,7 @@ color:#d73e4d;
   left: 0;
   right: 0;
   bottom: 0;
-  background: #d73e4d;
+  background:rgba(70, 68, 83, 0.94);
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -1246,85 +1251,7 @@ footer a {
 
 
 
-          .carousel_wrap { 
-            height:360px;
-            position:relative;
-            margin-bottom:30px;
-          }
           
-          /*--water_whjeel_carousel--*/
-          #carousel img { 
-            opacity:0;
-            width:360px;
-            height:330px;
-          }
-          #carousel {
-            width:1200px;
-            margin:0px auto;
-            margin-top:50px;
-            height:350px;
-            position:relative;
-            clear:both;
-            overflow:hidden;
-          }
-          #carousel > div {
-            visibility:hidden;
-            cursor:pointer;
-            -webkit-box-shadow: 0px 0px 8px 0px rgba(102,102,102,1);
-            -moz-box-shadow: 0px 0px 8px 0px rgba(102,102,102,1);
-            box-shadow: 0px 0px 8px 0px rgba(102,102,102,1);
-          }
-          #carousel .caption {
-            position: absolute;
-            background-color:#FFF;
-            top: 0px;
-            left: 0px;
-            height:100%;
-            width:100%;
-          }
-          
-          
-          .carous_item { 
-            position:absolute;
-            height:100%;
-            width:100%;
-            padding:0px 15px;
-            box-sizing:border-box;
-            display:block;
-          }
-          .carous_desc { 
-            position:absolute;
-            display:block;
-            text-align:center;
-            font-size:14px;
-            height:100%;
-            font-weight:400;
-            line-height:16px;
-            padding:0px 15px;
-            padding-left:0px;
-            color:#8A8A8A;
-            margin-bottom:15px;
-            top:0px;
-          }
-          .carousel_wrap .nav_button { 
-            position:absolute;
-            left:0px;
-            top:50%;
-            margin-top:-30px;
-            height:60px;
-            width:30px;
-            right:0px;
-            font-size:40px;
-            font-weight:600;
-            color:#F00;
-            cursor:pointer;
-            display:inline-block;
-            background-position:center center;
-            background-repeat:no-repeat;
-            background-size:cover;
-            transition:all 0.3s ease;
-          }
-         
           .ion-sticky {
             top: 50%;
             transform: translateY(-50%);

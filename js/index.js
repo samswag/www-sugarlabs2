@@ -27,21 +27,21 @@
       return this; // allow chaining
     }
 
-    var carousel = this;
+    var carouselss = this;
     var options = {};
     var data = {};
 
     function initializeCarouselData() {
       data = {
-        itemsContainer: $(carousel),
-        totalItems: $(carousel).children().length,
-        containerWidth: $(carousel).width(),
-        containerHeight: $(carousel).height(),
+        itemsContainer: $(carouselss),
+        totalItems: $(carouselss).children().length,
+        containerWidth: $(carouselss).width(),
+        containerHeight: $(carouselss).height(),
         currentCenterItem: null,
         previousCenterItem: null,
         items: [],
         calculations: [],
-        carouselRotationsLeft: 0,
+        carouselssRotationsLeft: 0,
         currentlyMoving: false,
         itemsAnimating: 0,
         currentSpeed: options.speed,
@@ -195,7 +195,7 @@
      * attributes. All items start in the middle position by default
      * and will "fan out" from there during the first animation
      */
-    function setupCarousel() {
+    function setupCarouselss() {
       // Fill in a data array with jQuery objects of all the images
       data.items = data.itemsContainer.children();
       for (var i = 0; i < data.totalItems; i++) {
@@ -262,7 +262,7 @@
       data.leftItemsCount = Math.floor((data.totalItems - 1) / 2);
 
       // We are in effect rotating the carousel, so we need to set that
-      data.carouselRotationsLeft = 1;
+      data.carouselssRotationsLeft = 1;
 
       // Center item
       moveItem(data.items[options.startingItem - 1], 0);
@@ -413,13 +413,13 @@
 
       // all items have finished their rotation, lets clean up
       if (data.itemsAnimating === 0) {
-        data.carouselRotationsLeft -= 1;
+        data.carouselssRotationsLeft -= 1;
         data.currentlyMoving = false;
 
         // If there are still rotations left in the queue, rotate the carousel again
         // we pass in zero because we don't want to add any additional rotations
-        if (data.carouselRotationsLeft > 0) {
-          rotateCarousel(0);
+        if (data.carouselssRotationsLeft > 0) {
+          rotateCarouselss(0);
           // Otherwise there are no more rotations and...
         } else {
           // Reset the speed of the carousel to original
@@ -444,7 +444,7 @@
      * in the given direciton. Will check to make sure the carousel should
      * be able to move, and then adjust speed and move items
      */
-    function rotateCarousel(rotations) {
+    function rotateCarouselss(rotations) {
       // Check to see that a rotation is allowed
       if (data.currentlyMoving === false) {
 
@@ -453,7 +453,7 @@
 
         data.currentlyMoving = true;
         data.itemsAnimating = 0;
-        data.carouselRotationsLeft += rotations;
+        data.carouselssRotationsLeft += rotations;
 
         if (options.quickerForFurther === true) {
           // Figure out how fast the carousel should rotate
@@ -528,10 +528,10 @@
         options.movingToCenter($(this));
         if (itemPosition < 0) {
           data.currentDirection = 'backward';
-          rotateCarousel(rotations);
+          rotateCarouselss(rotations);
         } else if (itemPosition > 0) {
           data.currentDirection = 'forward';
-          rotateCarousel(rotations);
+          rotateCarouselss(rotations);
         }
       }
     });
@@ -570,7 +570,7 @@
         }
       }
 
-      rotateCarousel(1);
+      rotateCarouselss(1);
     }
 
     /**
@@ -611,14 +611,14 @@
       }
       options = $.extend({}, $.fn.waterwheelCarousel.defaults, newOptions);
 
-      initializeCarouselData();
+      initializeCarouselssData();
       data.itemsContainer.children().hide();
       forceImageDimensionsIfEnabled();
 
       preload(function () {
         setOriginalItemDimensions();
         preCalculatePositionProperties();
-        setupCarousel();
+        setupCarouselss();
         setupStarterRotation();
       });
     }
@@ -663,7 +663,7 @@
     linkHandling: 2,                 // 1 to disable all (used for facebox), 2 to disable all but center (to link images out)
     autoPlay: 0,                 // indicate the speed in milliseconds to wait before autorotating. 0 to turn off. Can be negative
     orientation: 'horizontal',      // indicate if the carousel should be 'horizontal' or 'vertical'
-    activeClassName: 'carousel-center', // the name of the class given to the current item in the center
+    activeClassName: 'carouselss-center', // the name of the class given to the current item in the center
     keyboardNav: false,             // set to true to move the carousel with the arrow keys
     keyboardNavOverride: true,              // set to true to override the normal functionality of the arrow keys (prevents scrolling)
     imageNav: true,              // clicking a non-center image will rotate that image to the center
@@ -685,7 +685,7 @@
 
 
    /*--water_wheel_carousel--*/
-	var carousel = $("#carousel").waterwheelCarousel({
+	var carouselss = $("#carouselss").waterwheelCarousel({
          flankingItems: 2,
 		 separation:200,
 		 sizeMultiplier:0.8,
@@ -693,15 +693,15 @@
 		 speed:250,
 	 });
 	 
-	 $("#carousel").swipe( {
+	 $("#carouselss").swipe( {
 		swipeStatus:function(event, phase, direction, distance)
 		{
 			if (phase=="end"){
 				if(direction == "right") { 
-					carousel.prev();
+					carouselss.prev();
 				}
 				else if(direction =="left") {
-					carousel.next();
+					carouselss.next();
 				}else { return false;}
 			}
 		},
@@ -709,11 +709,11 @@
 		threshold:100
 	});
 	$('#prev').on('click', function (){
-		carousel.prev();
+		carouselss.prev();
 		return false;
 	});
 	$('#next').on('click', function (){
-		carousel.next();
+		carouselss.next();
 		return false;
 	});
 	/*--water_wheel carousel_script_end--*/
