@@ -922,14 +922,21 @@ color: #939090;
 }
  .quotes {
    color: white;
+   font-size: 18px;
  } 
 .yellow {
-  font-size: 48px;
+  font-size: 30px;
   color: yellow;
   transform: rotate(45deg);
   font-family: ' Varela Round', sans-serif;
 
 }
+.fa-rotate-45{
+  -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+  .fa-rotate-225{
+    -webkit-transform: rotate(225deg); -ms-transform: rotate(225deg); transform: rotate(225deg); }
+
 
 .white{
   color: white;
