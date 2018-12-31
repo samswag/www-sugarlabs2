@@ -28,7 +28,8 @@
   <!-- Owl Carousel CSS -->
   <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
-  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
@@ -38,9 +39,8 @@
   <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-  <link rel="stylesheet" href="assets/css/bootsnav.css">
+  
 
  
 </head>
@@ -65,7 +65,7 @@
 							<span class="icon-bar"></span>
 							</button>
 							<a class="navbar-brand" href="index.html">
-								<img src="" alt="Logo">
+								<img  class="logos" src="images/logo.png" alt="Logo">
 							</a>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
@@ -79,7 +79,7 @@
 										<li><a href="portfolio-single.html">Portfolio Single</a></li>
 									</ul>
 								</li>
-								<li><a href="service.html">Service</a></li>
+								<li><a href="about.html">About Us</a></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="ion-ios-arrow-down"></span></a>
 									<ul class="dropdown-menu">
@@ -95,14 +95,22 @@
 									<ul class="dropdown-menu">
 										<li><a href="about.html">About Us</a></li>
 										<li><a href="coming-soon.html">Coming Soon</a></li>
-										<li><a href="404.html">404 Page</a></li>
+									<li><a href="404.html">404 Page</a></li>
 										<li><a href="faq.html">FAQ</a></li>
 										<li><a href="pricing.html">Pricing Table</a></li>
 									</ul>
                 </li>
   
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
+                                <li><a href="contact.html">Contact</a></li>
+                               
+                            </ul>
+                            <div class="search-box">
+                                <input class="search-text" type="text" name="" placeholder="Type to search">
+                                <a class="search-btn" href="#">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </div>
+                            
 							</div><!-- /.navbar-collapse -->
 							</div><!-- /.container-fluid -->
 						</nav>
@@ -110,6 +118,8 @@
 				</div>
 			</div>
 			</header>         
+<!-- Slider Start -->
+<!-- ***** Header Area End ***** -->
 <!-- Slider Start -->
 <section class="slider">
 	<div class="container">
@@ -145,12 +155,14 @@
                                 <p>Learning software for children</p>
                             </div>
                             <p class="customColor">Sugar is an activity-focused, open-source learning platform for children. 
-                                Collaboration, reflection, and discovery are integrated directly into the user interface. 
-                                Through Sugar's clarity of design, children and teachers have the opportunity to use 
-                                computers on their own terms. Students can reshape, reinvent, and reapply both 
+                                Collaboration, reflection, and discovery are integrated directly into the user interface.
+                                Through Sugar's clarity of design,children and teachers have the opportunity to use 
+                                computers on their own terms.Students can reshape, reinvent, and reapply both 
                                 software and content into powerful learning activities. 
-                                Sugar's focus on sharing, criticism, and exploration is grounded in the 
+                                Sugar's focus on sharing, criticism, and exploration is grounded in the
                                 culture of free software (FLOSS)
+                                <br>
+                            <a  class="colors" href="about.html">Read More</a>
                             </p>
                         </div>
                     </div>
@@ -160,11 +172,11 @@
     </div>
     <div class="container customMargin7">
         <div class="section-title">
-            <h2 class="text-center customMargin1">Get a glance of sugar</h2>
+            <h2 id="margin1" class="text-center customMargin1">Get a glance of sugar</h2>
         </div>
     </div>
-</section>
-<section id="home" class="home bg-black fix">
+
+<div id="home" class="home bg-black fix">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -175,13 +187,13 @@
                             <div>
                                 <img id="imgrflt" src="images/screenshot1.png" alt="Sugar homepage screenshot" width="100%">
                                 <h3 class="text-center">This is sugar!</h3>
-                                <p>Every user is greeted with this homepage view when they open Sugar. The color of the icon in the middle can be changed.</p>
+                                <p class="below">Every user is greeted with this homepage view when they open Sugar. The color of the icon in the middle can be changed.</p>
                             </div>
                         </div><!-- End off slid item -->
                         <div class="slid_item">
                             <div>
                                 <img id="imgrflt" src="images/neighbourhood-screenshot.svg" alt="Sugar Neighborhood view screenshot" width="100%">
-                                <p><br>In the Sugar Neighborhood view, learners see their
+                                <p class="below"><br>In the Sugar Neighborhood view, learners see their
                                 friends clustered around their current Activities; from this view, they can
                                 join each other’s Activities.  Sugar collaboration works "peer to
                                 peer," in a classroom or under a tree; Sugar does not require the
@@ -192,7 +204,7 @@
                         <div class="slid_item">
                             <div>
                                 <img id="imgrflt" src="images/screenshot2.png" alt="Maze activity screenshot" width="100%" >
-                                <p><br>This is one of the many other fun activities present in Sugar. Check out all the other activities.</p>
+                                <p class="below"><br>This is one of the many other fun activities present in Sugar. Check out all the other activities.</p>
                           </div>
                         </div><!-- End off slid item -->
                     </div>
@@ -205,7 +217,7 @@
     </div><!--End off container -->
 </section> <!--End off Home Sections-->
 
-<section id="testimonial" class="customPadding5">
+<section id="testimonial" class="customPadding5" >
   <div class="container">
               <div class="row">
                   <div class="col-md-5 col-md-push-1">
@@ -213,19 +225,19 @@
                           <ul class="counter-box clearfix">
                               <li>
                               <div class="block">
-                              <h4>11,531,321+</h4>
+                              <h4 class="white">11,531,321+</h4>
                               <span>Activities Downloaded</span>
                               </div>
                               </li>
                               <li>
                               <div class="block">
-                              <h4>3,000,000+</h4>
+                              <h4 class="white">3,000,000+</h4>
                               <span>Sugar Users</span>
                               </div>
                               </li>
                               <li class="fullWidth">
                               <div class="block">
-                              <h4>170</h4>
+                              <h4 class="white">170</h4>
                               <span>Translated languages of Sugar Labs</span>
                               </div>
                               </li>
@@ -235,17 +247,17 @@
                   <div class="col-md-5 col-md-push-1 customPadding4">
                         <div class="testimonial-carousel customPadding4 borderNone">
                                     <div class= "hello_slid owl-carousel customPadding4" id="testimonial-slider2">
-                                        <div class="slid_item">
+                                        <div class="slid_item" style="color:yellow;" >
                                                 <div>
-                                                        <p class="leftAlign">"I don't think I've ever seen a piece of commercial software where the next version is simpler rather than more complex."</p>
+                                                        <p class="leftAlign quotes"><span class="yellow"><i class="fas fa-quote-left fa-rotate-45"></i></span>I don't think I've ever seen a piece of commercial software where the next version is simpler rather than more complex.<span class="yellow"><i class="fas fa-quote-right fa-rotate-45"></i></span></p>
                                                         <div class="user">
-                                                            <p><span>Walter Bender</span> Founder-Sugar Labs</p>
+                                                            <p><span>Walter Bender</span></p>
                                                         </div>
                                                     </div>
                                         </div><!-- End off slid item -->
                                         <div class="slid_item">
                                             <div>
-                                                        <p class="leftAlign">"A successful technology creates problems that only it can solve."</p>
+                                                        <p class="leftAlign quotes"><span class="yellow"><i class="fas fa-quote-left fa-rotate-45"></i></span>A successful technology creates problems that only it can solve.<span class="yellow"><i class="fas fa-quote-right fa-rotate-45"></i></span></p>
                                                         <div class="user">
                                                             <p><span>Alan Kay</span></p>
                                                         </div>
@@ -253,7 +265,7 @@
                                     </div><!-----End pff slid item-->                
                                         <div class="slid_item">
                                                 <div>
-                                                        <p class="leftAlign">"Fedora-Based Sugar on a Stick Is One Sweet Desktop."</p>
+                                                        <p class="leftAlign quotes"><span class="yellow"><i class="fas fa-quote-left fa-rotate-45"></i></span> Sugar on a Stick Is One Sweet Desktop.<span class="yellow"><i class="fas fa-quote-right fa-rotate-45"></i></span></p>
                                                         <div class="user">
                                                             <p><span>LinuxInsider</span></p>
                                                         </div>
@@ -395,20 +407,21 @@
             </div>
         </div>
     </div>
-</section>
 
 <!-- Activites website redirect section -->
-<section id="intro" class="customMarPadCombo4">
+<div class="customMarPadCombo3">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3>Click here to see more</h3>
-                <a href="https://activities.sugarlabs.org/"><button type="button" class="btn bt-raised btn-custom bt">Sugar Activity Library</button></a>
+                <h3 class="click">Click here to see more</h3>
+                <a href="https://activities.sugarlabs.org/">
+                    <button type="button" class="btn bt-raised btn-custom bt">Sugar Activity Library</button></a>
             </div>
         </div>
     </div>
+    </div>
 </section>
--->
+
 <section id="about-us">
     <div class="container">
         <div class="theme-title">
@@ -419,33 +432,39 @@
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="single-about-content">
                     <div class="icon round-border tran3s">
-                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            <figure>
+                                    <img src="images/mb2.png" class="span1 customLogoImageStyle" alt="raspberry-pi svg">
+                                    </figure>
                     </div>
-                    <h5><a href="#" class="tran3s">Web Development</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
+                    <h5><a href="#" class="tran3s">MUSIC BLOCK</a></h5>
+                    <p class="do">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+                    <a href="https://activities.sugarlabs.org/"><button type="button" class="btn bt-raised btn-custom bt">Sugar Activity Library</button></a>
                 </div> <!-- /.single-about-content -->
             </div> <!-- /.col -->
 
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="single-about-content">
                     <div class="icon round-border tran3s">
-                        <i class="fa fa-camera" aria-hidden="true"></i>
+                            <figure>
+                                    <img src="images/sugarizer.svg" class="span1 customLogoImageStyle" alt="Sugarizer svg">
+                                    </figure>
                     </div>
-                    <h5><a href="#" class="tran3s">PHOTOGRAPHY</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
+                    <h5><a href="#" class="tran3s">SUGARIZER</a></h5>
+                    <p class="do">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+                    <a href="https://activities.sugarlabs.org/"><button type="button" class="btn bt-raised btn-custom bt">Read More</button></a>
                 </div> <!-- /.single-about-content -->
             </div> <!-- /.col -->
 
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="single-about-content">
                     <div class="icon round-border tran3s">
-                        <i class="fa fa-life-ring" aria-hidden="true"></i>
+                            <figure>
+                                    <img src="images/raspberry-pi.svg" class="span1 customLogoImageStyle" alt="raspberry-pi svg">
+                                    </figure>
                     </div>
-                    <h5><a href="#" class="tran3s">Digital Media</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
+                    <h5><a href="#" class="tran3s">TURTLE ARTS</a></h5>
+                    <p class="do">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+                    <a href="https://activities.sugarlabs.org/"><button type="button" class="btn bt-raised btn-custom bt">Read More</button></a>
                 </div> <!-- /.single-about-content -->
             </div> <!-- /.col -->
 
@@ -454,39 +473,51 @@
                     <div class="icon round-border tran3s">
                         <i class="fa fa-line-chart" aria-hidden="true"></i>
                     </div>
-                    <h5><a href="#" class="tran3s">Online Marketing</a></h5>
-                    <p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
+                    <h5><a href="#" class="tran3s">PRIMERO</a></h5>
+                <p class="do">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+                <a href="https://activities.sugarlabs.org/"><button type="button" class="btn bt-raised btn-custom bt">Read More</button></a>
                 </div> <!-- /.single-about-content -->
             </div> <!-- /.col -->
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </section> <!-- /#about-us -->
 
-<div class="carousel_wrap">
-    <div id="carousel" style="position: relative;">
-    
-            <img src="http://www.yencerbuildersinc.com/wp/wp-content/uploads/2012/12/640x3601.gif" id="item-1">
-            <div class="caption carous_item carous_item3">
-                <span class="carous_desc">Thinking of your overall print usage, how  much of your printing is in colour?</span>
+<!-- Caro -->
+<section id="water">
+<div id="caro">
+    <div class="carousel_wrap row">
+        <div class="col-md-12">
+            <div id="carousel">
+                <div class="shadow">
+                    <div class="caption carous_item carous_item3">
+                        <h2 class="decide">JOIN THE CONVERSATION</h2> 
+                        <p class="dent">Sugar Labs is an organization built around engaging people. We strive to create software that works well for teachers and students - something that can only happen with your engagement. Join us on Social Help or on our "It's An Education Project" mailing list. Don't feel shy to raise concerns and bring feedback to the table.</p>
+                        <a href="http://lists.sugarlabs.org/listinfo/iaep"><button type="button" class="btn bt-raised btn-custom bt middle ">Join the Conversation</button></a>
+                    </div>
+                </div>
+                <div class="shadow">
+                    <div class="caption carous_item carous_item2">
+                    <h2 class="decide" style="text-align:center;">SOCIAL HELP</h2> 
+                   <p class="dent"> This is a place where you can discuss Sugar Activities. You can: Get Help, Share Your Creations, Report Bugs, Discuss Ideas for the Activity, Any Other Activity-Related Topic.</p>
+                   <a href="https://socialhelp.sugarlabs.org/"><button type="button" class="btn bt-raised btn-custom bt middle ">Social Help Page</button></a>
+                </div>
+                </div>
+                <div class="shadow">
+                    <div class="caption carous_item carous_item7">
+                            <h2 class="decide" style="text-align:center;">EXCITED?</h2>
+                    <p class="dent"><i>Want to find out more?</i>
+                    Don't wait any longer! Join our mailing list for the latest discussions. Explore our wiki to find out each and every information.</p>
+                    <a href="https://wiki.sugarlabs.org/"><button type="button" class="btn bt-raised btn-custom bt lastButtonMargin">Sugar Labs Wiki</button></a>
+                    <a href="https://wiki.sugarlabs.org/go/Mailing_Lists"><button type="button" class="btn bt-raised btn-custom bt lastButtonMargin">Mailing List</button></a>
+                </div>
+                </div>
             </div>
         </div>
-
-            <img src="http://www.yencerbuildersinc.com/wp/wp-content/uploads/2012/12/640x3601.gif" id="item-2">
-            <div class="caption carous_item carous_item2">
-                <span class="carous_desc">In a typical month how frequently do you print things at the folowing places?</span>
-            </div>
-        </div>
-            <img src="http://www.yencerbuildersinc.com/wp/wp-content/uploads/2012/12/640x3601.gif" id="item-3">
-            <div class="caption carous_item carous_item7">
-                <span class="carous_desc">And did you exchange or ask for a refund for your purchase? -Laser Printer	</span>
-            </div>
-        </div>
-         
- </div>
-     
- </div>
-     
+        <!-- <a id="prev" class="nav_button prev_button link pull-left" title="prev">&lt;</a>
+        <a id="next" class="nav_button next_button link pull-right" title="next">&gt;</a> -->
+    </div>
+</div>
+</section>
 
 <!-- footer Start -->
 <footer  style="background-color:#464453;padding-top:5px;">
@@ -545,15 +576,14 @@
                         <div class="row">
                             <div class="col-md-12" >
                                 <div class="row">
-                                    <div class="col-md-5 to-animate col-md-push-3" style="margin-top:10px;">
+                                    <div class="col-md-5 to-animate col-md-push-3">
                                         <div class="row align-center-md">
-                                            <h3>Stay Connected</h3>
-                                            <div id="own-ssk" class="ssk-group">
+                                            <h3 style="font-size:15px">Stay Connected</h3>
+                                            <div id="own-ssk" class="group">
                                                 <a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ion-icon ion-social-facebook"></a>
                                                 <a href="https://github.com/sugarlabs" class="ion-icon ion-social-github"></a>
                                                 <a href="https://twitter.com/sugar_labs" class="ion-icon ion-social-twitter"></a>
                                                 <a href="https://www.instagram.com/sugarlabsforall/" class="ion-icon ion-social-instagram" ></a>
-                                                <a href="https://www.youtube.com/channel/UCfsR9AEb7HuPRAc14jfiI6g/featured" class="ion-icon ion-social-youtube"></a>
                                             </div>
                                             </br>
                                         </div>
@@ -575,29 +605,30 @@
                         </div>
                     </div>
                 </div>
-                </br>
-                <div class="row" >
-                    <div class="col-md-12" style="margin-top:12px;">
-                        <p style="text-align:left;font-size:13px;" class='text-center-md'>
-                        Copyright &copy; Sugar Labs&reg; available under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License(CC-BY-SA)</a>.</br>
-                        Website base template: Designed and developed by Themefisher
-                        </p>
-                    </div>
-                </div>
+            </br>
             </div>
         </div>
     </div>
 </footer>
-
-
-    <!-- 
+<div class="footer-basic-centered">
+<p class="footer-company-name">Company Name © 2015</p>
+</div>
+<!-- FLoating social media icons -->
+<div id="mobile-ssk" class="ion-sticky ssk-group">
+        <a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ion-sticky-icon ion-social-facebook"></a>
+        <a href="https://github.com/sugarlabs" class="ion-sticky-icon ion-social-github"></a>
+        <a href="https://twitter.com/sugar_labs" class="ion-sticky-icon ion-social-twitter"></a>
+        <a href="https://www.instagram.com/sugarlabsforall/" class="ion-sticky-icon ion-social-instagram"></a>
+        <a href="https://www.youtube.com/channel/UCfsR9AEb7HuPRAc14jfiI6g/featured" class="ion-sticky-icon ion-social-youtube"></a>
+    </div>
+ <!-- 
     Essential Scripts
     =====================================-->
-    
+
     <!-- <script src="js/jquery.counterup.js"></script> -->
-    
+
     <!-- Main jQuery -->
-   
+
     <script src="https://code.jquery.com/jquery-git.min.js"></script>
     <!-- Bootstrap 3.1 -->
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -616,17 +647,16 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 
 
-    
+
     <!-- Google Map -->
     <script src="plugins/google-map/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
 
     <script src="js/script.js"></script>
-    <script src="js/owl.carousel.min.js"></script>    
-   
+    <script src="js/owl.carousel.min.js"></script>
+
 
     <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
 
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.js"></script>
@@ -634,17 +664,22 @@
     <script src="assets/css/slick/slick.js"></script>
     <script src="assets/css/slick/slick.min.js"></script>
     <script src="assets/js/jquery.collapse.js"></script>
-    <script src="assets/js/bootsnav.js"></script>
+    
 
 
 
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-    <script  src="js/index.js"></script>
+    <!-- <script  src="js/index.js"></script> -->
 
-<script src='https://code.jquery.com/jquery-1.12.4.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+
+    <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <!-- <script type="text/javascript" src="js/watery_caro.js"></script> -->
+    <script type="text/javascript" src="js/caro.js"></script>
 
 
 
