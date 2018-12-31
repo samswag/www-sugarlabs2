@@ -4,6 +4,7 @@ body {
   line-height: 1.5;
   font-family: 'Varela Round', sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-color: rgba(245, 244, 255, 0.94);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,17 +28,16 @@ h2 {
 
 
 h3 {
-  font-size: 28px;
+  color: #979797;
   font-weight: 300;
+  font-size: 15px;
 }
 
 h4 {
   font-size: 18px;
   font-weight: 400;
 }
-h5{
 
-}
 p {
   color: #7B7B7B;
   font-size: 15px;
@@ -110,8 +110,8 @@ blockquote {
 
 .logos{
   vertical-align: middle;
-    width: 200px;
-    height: 65px;
+   /* width: 200px; */
+    height: 60px;
 }
 
 input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
@@ -461,8 +461,8 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   right: 0;
   width: 100%;
   height: 100%;
-  background: #5d5a68;
-  opacity: 0.8;
+  background: rgba(70, 68, 83, 0.99);
+  opacity: 0.9;
 }
 
 .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
@@ -580,7 +580,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .navigation {
   background:#fff;
-  padding: 20px 0;
+  padding: 17px 0;
 }
 
 .navigation .navbar {
@@ -639,15 +639,16 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .slider {
-  background: url("../images/slide.jpg") no-repeat;
+  background: url("../images/new_bg6.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
-  padding: 130px 0 130px 0;
+  padding: 140px 0 170px 0;
   position: relative;
   z-index: -10;
   width: 100%;
   height: 100%;
+
 
 }
 
@@ -655,24 +656,18 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #E3E3E4;
 }
 
-.slider .block h1 {
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 1.1;
-  text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.slider .block h2 {
+  margin-bottom: 30px;
   color:#fff;
 }
 
 .slider .block p {
   font-weight: normal;
-line-height: 36px;
-font-size: 26px;
-letter-spacing: 0.09em;
-font-family: 'Valeria Round', sans-serif;
+line-height: 28px;
+font-size: 20px;
+letter-spacing: 0.2em;
 color: #FFFFFF;
-
+font-family: 'Varela Round', sans-serif;
 }
 
 
@@ -775,6 +770,7 @@ p {
 }
 #intro{
   background: #f8f8fe;
+  padding: 45px;
 }
 #intro .section-title {
   margin-bottom: 0px;
@@ -797,12 +793,12 @@ p {
   padding-bottom: 110px !important
 }
 #intro .section-title p {
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 #intro .block p {
  color: rgba(70, 68, 83, 0.94);
-  padding-top: 20px;
+  
 }
 .section-title p {
   font-family: 'Varela Round', sans-serif;
@@ -814,10 +810,11 @@ p {
   color: rgba(70, 68, 83, 0.94);
   font-family: 'Varela Round', sans-serif;
   text-align: center;
-  line-height: 29px;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 12.5px;
+    font-weight: 500;
   clear: both;
+  letter-spacing: 0.05px;
+  padding-top: 20px;
 }
 .colors{
   font-family: Varela Round;
@@ -829,14 +826,20 @@ text-align: center;
 color: #939090;
 }
 .customMargin7{
-  margin-top:40px !important;
+ /* margin-top:40px !important; */
+  background-color: #F8F8FE;
+}
+#margin1{
+  font-size: 14px;
+  color: rgba(70, 68, 83, 0.94);
+
 }
 
 #intro .section-title {
   margin-bottom: 0px;
 }
 .customMargin1{
-  margin-bottom:30px !important;
+  /*margin-bottom:30px !important; */
   font-size: 14px;
   color: rgba(70, 68, 83, 0.94);
   
@@ -860,12 +863,9 @@ color: #939090;
 #intro .section-title {
   margin-bottom: 0px;
 }
-#intro .section-title p {
-  padding-top: 20px;
-}
 
 #home {
-  padding: 50px;
+  background-color: #F8F8FE;
 }
 .owl-carousel .owl-pagination div {
   border: 1px solid #1D1D1D;
@@ -948,11 +948,12 @@ color: #939090;
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-#testimonial .testimonial-carousel {
+ .testimonial-carousel {
   text-align: center;
   width: 75%;
     padding: 24px;
   margin: 0 auto;
+  border: 1px solid #000000;
 }
 .borderNone {
   border: none !important;
@@ -985,29 +986,39 @@ color: #939090;
 #testimonial {
   padding: 100px 0;
 }
- #testimonial .span1 {
-  width: 120px;
-  height: 120px;
-}
-img .span1 {
-  width: 120px;
+ .span1 {
+  width: 220px;
   height: 120px;
   vertical-align: middle;
 }
+@media only screen and (max-width: 768px) {
+  .span1 {
+    width: 400px;
+    height: 120px;
+    vertical-align: middle;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .span1 {
+    width: 500px;
+    height: 120px;
+    vertical-align: middle;
+  }
+}
 .click{
   font-family: Open Sans;
-font-style: italic;
 font-weight: normal;
 line-height: 17px;
-font-size: 12px;
+font-size: 14px;
 text-align: center;
 color: rgba(70, 68, 83, 0.94);
 }
 .customMarPadCombo3{
   margin-bottom:10px !important;
   padding-bottom:10px !important;
-  padding-top:50px !important;
+  background-color: #F8F8FE;
   }
+  
   .section-title {
     margin-bottom: 70px;
   }
@@ -1016,24 +1027,11 @@ color: rgba(70, 68, 83, 0.94);
     font-size: 15px;
     line-height: 28px;
   }
-  #testimonial .testimonial-carousel {
-    text-align: center;
-    width: 75%;
-    /*border: 1px solid #DEDEDE;*/
-    border: 1px solid #000000;
-    padding: 24px;
-    margin: 0 auto;
+ .testimonial-carousel img{
+    padding-bottom: 30px;
   }
-  #testimonial .testimonial-carousel img{
-  }
-  #testimonial .span1 {
-    width: 120px;
-    height: 120px;
-  }  
-  .span1{
-    vertical-align: middle;
-    margin-left: 10px;
-  }
+  
+  
   .customMargin4{
     margin-bottom:15px !important;
   }
@@ -1111,7 +1109,7 @@ color: rgba(70, 68, 83, 0.94);
   margin-left: -12px;
 }
 #about-us {
-  background: rgba(245, 244, 255, 0.94);
+  background-color: rgba(245, 244, 255, 0.94);
 }
 #about-us .single-about-content {
   text-align: center;
@@ -1144,9 +1142,9 @@ border-color: rgba(186, 182, 214, 0.94);
        -o-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
-#about-us .single-about-content:hover .icon{
+/*#about-us .single-about-content:hover .icon{
   
-}
+} */
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -1285,8 +1283,8 @@ footer .footer-manu ul li a:hover {
     .active .widget_content{
       display:inline;
     }
-    .widget h4 {
-    }
+     
+    
     .widget h4:after {
         color:white;
         width:20px;
@@ -1308,6 +1306,7 @@ footer .footer-manu ul li a:hover {
 .listFont{
   font-size: 16px;
 }
+
 .footer {
   background: #F5F5F5;
   text-align: center;
@@ -1319,7 +1318,7 @@ footer .footer-manu ul li a:hover {
 }
 .footerHeaderStyle {
   margin-bottom: 14px;
-  color: #ffffff;
+  color: #939090;
   margin-top: 10px;
   text-align: left;
 }
@@ -1328,9 +1327,16 @@ footer .footer-manu ul li a:hover {
   font-size: 15px;
 }
 footer a {
-  color: #ffffff;
-}  
-        .ion-sticky {
+  color: #939090;
+} 
+.group{ 
+line-height: 1px;
+font-size: 28px;
+/* width: 65px; */
+/* float: right; */
+vertical-align: middle;
+}
+.ion-sticky {
             top: 50%;
             transform: translateY(-50%);
             -webkit-transform: translateY(-50%);
@@ -1361,58 +1367,75 @@ footer a {
             .ion-sticky-icon.ion-social-facebook {
               text-indent: 5.5px;
               margin-right: -8.5px;
-              border-radius: 0.25em 0.25em 0 0; }
+              border-radius: 50%; 
+            border: 1px solid #fff;}
               .ion-sticky-icon.ion-social-facebook:hover {
                 background: #2d4373; }
             .ion-sticky-icon.ion-social-github {
               text-indent: 1.5px;
-              margin-right: -1.5px; }
+              margin-right: -1.5px;
+              border-radius: 50%; 
+              border: 1px solid #fff; }
               .ion-sticky-icon.ion-social-github:hover {
                 background: black; }
             .ion-sticky-icon.ion-social-twitter {
               text-indent: 1px;
-              margin-right: -1px; }
+              margin-right: -1px;
+              border-radius: 50%; 
+              border: 1px solid #fff; }
               .ion-sticky-icon.ion-social-twitter:hover {
                 background: #0e8aea; }
             .ion-sticky-icon.ion-social-instagram {
               text-indent: 3.5px;
-              margin-right: -3.5px; }
+              margin-right: -3.5px;
+              border-radius: 50%; 
+              border: 1px solid #fff; }
               .ion-sticky-icon.ion-social-instagram:hover {
                 background: linear-gradient(60deg, #cccc00, #cc00a9, #0b2dac); }
             .ion-sticky-icon.ion-social-youtube {
-              border-radius: 0 0 0.25em 0.25em; }
+              border-radius: 50%; 
+              border: 1px solid #fff } .ion-icon.ion-social-youtube {
+                color:#767676;
+                border-radius: 50%; 
+                border: 1px solid #979797;  }
+                .ion-icon.ion-social-youtube:hover {
+                  color: #cc0000; }
               .ion-sticky-icon.ion-social-youtube:hover {
                 background: #cc0000; }
           
           .ion-icon {
-            padding: 1px 4px;
+            padding: 1px 8px;
             display: inline-block; }
             .ion-icon.ion-social-facebook {
-              color: #767676; }
+              color: #767676; 
+              border-radius: 50%; 
+              border: 1px solid #979797;; }
               .ion-icon.ion-social-facebook:hover {
                 color: #2d4373; }
             .ion-icon.ion-social-github {
-              color: #767676; }
+              color: #767676;
+              border-radius: 50%; 
+              border: 1px solid #979797;;  }
               .ion-icon.ion-social-github:hover {
                 color: #5d5d5d; }
             .ion-icon.ion-social-twitter {
-              color: #767676; }
+              color: #767676; 
+              border-radius: 50%; 
+              border: 1px solid #979797;}
               .ion-icon.ion-social-twitter:hover {
                 color: #0e8aea; }
             .ion-icon.ion-social-instagram {
               color: #767676;
-              background: linear-gradient(60deg, #cccc00, #cc00a9, #0b2dac);}
+              border-radius: 50%; 
+              border: 1px solid #979797;; }
               .ion-icon.ion-social-instagram:hover {
                 color: #d9a1f1; }
-            .ion-icon.ion-social-youtube {
-              color:#767676; }
-              .ion-icon.ion-social-youtube:hover {
-                color: #cc0000; }
+           
           
           .ssk-group {
-            line-height: 1px;
+            line-height: 0.03px;
             font-size: 28px;
-            /* width: 330px; */
+            width: 65px; 
             float:right;
             }
             .footer-basic-centered {
@@ -1731,7 +1754,7 @@ font-size: 15px;
 text-align: center;
 color: #000000;
 }
-/*--water_whjeel_carousel--*/
+/*--water_wheel_carousel--*/
 #carousel img { 
   opacity:0;
   height:340px;
@@ -1821,17 +1844,37 @@ vertical-align: middle;
   background-size:cover;
   transition:all 0.3s ease;
 }
-.carousel_wrap .nav_button.prev_button { 
-  left:50px;
-}
-.carousel_wrap .nav_button.next_button { 
-  
-  left:auto;
-  right:50px;
-}
+
 #water{
   padding: 50px 0;
+  background-color: #F8F8FE;
 }
+
+.shadow{
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .figure {
   margin: 0;
 }
