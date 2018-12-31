@@ -37,9 +37,7 @@ h4 {
   font-size: 18px;
   font-weight: 400;
 }
-h5{
 
-}
 p {
   color: #7B7B7B;
   font-size: 15px;
@@ -1144,9 +1142,9 @@ border-color: rgba(186, 182, 214, 0.94);
        -o-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
-#about-us .single-about-content:hover .icon{
+/*#about-us .single-about-content:hover .icon{
   
-}
+} */
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -1285,8 +1283,8 @@ footer .footer-manu ul li a:hover {
     .active .widget_content{
       display:inline;
     }
-    .widget h4 {
-    }
+     
+    
     .widget h4:after {
         color:white;
         width:20px;
