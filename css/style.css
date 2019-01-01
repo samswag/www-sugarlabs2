@@ -1457,7 +1457,7 @@ font-size: 28px;
 vertical-align: middle;
 }
 .ion-sticky {
-            top: 50%;
+            top: 55%;
             transform: translateY(-50%);
             -webkit-transform: translateY(-50%);
             -moz-transform: translateY(-50%);
@@ -1477,7 +1477,7 @@ vertical-align: middle;
             -moz-transition: padding 0.1s ease-out;
             -ms-transition: padding 0.1s ease-out;
             -o-transition: padding 0.1s ease-out;
-            margin: 0;
+            margin: 7px;
             padding: 9px;
             color: white;
             }
@@ -1554,8 +1554,8 @@ vertical-align: middle;
           
           .ssk-group {
             line-height: 0.03px;
-            font-size: 28px;
-            width: 65px; 
+            font-size: 15px;
+            width: 88px; 
             float:right;
             }
             .footer-basic-centered {
@@ -2524,7 +2524,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .slider .block p {
   font-weight: normal;
-  line-height: 1.17;
+  line-height: 1.5;
   font-size: 22px;
   letter-spacing: 0.09em;
   color: #FFFFFF;
@@ -3196,108 +3196,9 @@ font-size: 28px;
 /* float: right; */
 vertical-align: middle;
 }
-.ion-sticky {
-            top: 50%;
-            transform: translateY(-50%);
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
-            right: 0;
-            position: absolute;
-            z-index: 2147483647;
-            }
+
           
-          .ion-sticky-icon {
-            float: left;
-            display: block;
-            clear: both;
-            transition: padding 0.1s ease-out;
-            -webkit-transition: padding 0.1s ease-out;
-            -moz-transition: padding 0.1s ease-out;
-            -ms-transition: padding 0.1s ease-out;
-            -o-transition: padding 0.1s ease-out;
-            margin: 0;
-            padding: 9px;
-            color: white;
-            }
-            .ion-sticky-icon:hover {
-              padding-left: 15px;
-              color: white; }
-            .ion-sticky-icon.ion-social-facebook {
-              text-indent: 5.5px;
-              margin-right: -8.5px;
-              border-radius: 50%; 
-            border: 1px solid #fff;}
-              .ion-sticky-icon.ion-social-facebook:hover {
-                background: #2d4373; }
-            .ion-sticky-icon.ion-social-github {
-              text-indent: 1.5px;
-              margin-right: -1.5px;
-              border-radius: 50%; 
-              border: 1px solid #fff; }
-              .ion-sticky-icon.ion-social-github:hover {
-                background: black; }
-            .ion-sticky-icon.ion-social-twitter {
-              text-indent: 1px;
-              margin-right: -1px;
-              border-radius: 50%; 
-              border: 1px solid #fff; }
-              .ion-sticky-icon.ion-social-twitter:hover {
-                background: #0e8aea; }
-            .ion-sticky-icon.ion-social-instagram {
-              text-indent: 3.5px;
-              margin-right: -3.5px;
-              border-radius: 50%; 
-              border: 1px solid #fff; }
-              .ion-sticky-icon.ion-social-instagram:hover {
-                background: linear-gradient(60deg, #cccc00, #cc00a9, #0b2dac); }
-            .ion-sticky-icon.ion-social-youtube {
-              border-radius: 50%; 
-              border: 1px solid #fff } .ion-icon.ion-social-youtube {
-                color:#767676;
-                border-radius: 50%; 
-                border: 1px solid #979797;  }
-                .ion-icon.ion-social-youtube:hover {
-                  color: #cc0000; }
-              .ion-sticky-icon.ion-social-youtube:hover {
-                background: #cc0000; }
-          
-          .ion-icon {
-            padding: 1px 8px;
-            display: inline-block; }
-            .ion-icon.ion-social-facebook {
-              color: #767676; 
-              border-radius: 50%; 
-              border: 1px solid #979797;; }
-              .ion-icon.ion-social-facebook:hover {
-                color: #2d4373; }
-            .ion-icon.ion-social-github {
-              color: #767676;
-              border-radius: 50%; 
-              border: 1px solid #979797;;  }
-              .ion-icon.ion-social-github:hover {
-                color: #5d5d5d; }
-            .ion-icon.ion-social-twitter {
-              color: #767676; 
-              border-radius: 50%; 
-              border: 1px solid #979797;}
-              .ion-icon.ion-social-twitter:hover {
-                color: #0e8aea; }
-            .ion-icon.ion-social-instagram {
-              color: #767676;
-              border-radius: 50%; 
-              border: 1px solid #979797;; }
-              .ion-icon.ion-social-instagram:hover {
-                color: #d9a1f1; }
-           
-          
-          .ssk-group {
-            line-height: 0.03px;
-            font-size: 28px;
-            width: 65px; 
-            float:right;
-            }
+         
             .footer-basic-centered {
               
          padding: 35px 0 23px;
