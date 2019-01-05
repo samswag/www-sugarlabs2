@@ -40,6 +40,7 @@
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="css/carousel.css">
   
 
  
@@ -102,19 +103,21 @@
                                             <li><a href="http://activities.sugarlabs.org" >Activities Library</a></li>
                                         </ul>
                                 </li>
-                                <li><a href="https://help.sugarlabs.org/">Use</a></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 									<ul class="dropdown-menu">
                                             <li><a href="http://planet.sugarlabs.org" >Blog Archive</a></li>
                                         </ul>
 </li>
-                            <div class="search-box">
-                                <input class="search-text" type="text" name="" placeholder="Type to search">
-                                <a class="search-btn" href="#">
-                                    <i class="fas fa-search"></i>
-                                </a>
-                            </div>
+<div class="search-box">
+      <!---  <form autocomplete="off" action="/action_page.php">
+            <div class="autocomplete" style="width:300px;"> -->
+        <input class="search-text" type="text" name="" placeholder="Type to search">
+        <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+        </a>
+    </div>	
+    </form>				
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
                                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Join Us<span class="caret"></span></a>
@@ -476,7 +479,7 @@
             </div> <!-- /.col -->
 
             <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="single-about-content">
+                <div class="single-about-content">90%
                     <div class="icon round-border tran3s">
                             <figure>
                                     <img src="images/raspberry-pi.svg" class="span1 customLogoImageStyle" alt="raspberry-pi svg">
@@ -502,46 +505,89 @@
     </div> <!-- /.container -->
 </section> <!-- /#about-us -->
 
-<!-- Caro -->
-<section id="water">
-<div id="caro">
-    <div class="carousel_wrap row">
-        <div class="col-md-12">
-            <div id="carousel">
-                <div class="shadow">
-                    <div class="caption carous_item carous_item3">
-                        <h2 class="decide">JOIN THE CONVERSATION</h2> 
-                        <p class="dent">Sugar Labs is an organization built around engaging people. We strive to create software that works well for teachers and students - something that can only happen with your engagement. Join us on Social Help or on our "It's An Education Project" mailing list. Don't feel shy to raise concerns and bring feedback to the table.</p>
-                        <a href="http://lists.sugarlabs.org/listinfo/iaep"><button type="button" class="btn bt-raised btn-custom bt middle ">Join the Conversation</button></a>
+    <!-- Caro -->
+    <section id="caro">
+            <!-- <div class="carousel_wrap row" align="center">
+                <div class="col-md-12">
+                    <h1>Carousel Demo</h1>
+                    <div id="carousel">
+                        <a href="#"><img src="images/1.jpg" id="item-1" /></a>
+                        <a href="#"><img src="images/2.jpg" id="item-2" /></a>
+                        <a href="#"><img src="images/3.jpg" id="item-3" /></a>
+                        <a href="#"><img src="images/4.jpg" id="item-4" /></a>
+                        <a href="#"><img src="images/5.jpg" id="item-5" /></a>
+                        <a href="#"><img src="images/6.jpg" id="item-6" /></a>
+                        <a href="#"><img src="images/7.jpg" id="item-7" /></a>
+                        <a href="#"><img src="images/8.jpg" id="item-8" /></a>
+                        <a href="#"><img src="images/9.jpg" id="item-9" /></a>
+                    </div>
+                    <a href="#" id="prev">Prev</a> | <a href="#" id="next">Next</a>
+                </div>
+            </div> -->
+    
+    
+            <div class="carousel_wrap row">
+                <div class="col-md-12">
+                    <div id="carousel">
+                        <div class="shadow">
+                            <img src="http://www.yencerbuildersinc.com/wp/wp-content/uploads/2012/12/640x3601.gif" id="item-1" />
+                            <div class="caption carous_item carous_item3">
+                                <span class="carous_desc">JOIN THE CONVERSATION
+                                    <p>
+                                        Sugar Labs is an organization built around engaging people.
+                                        We strive to create software that works well for teachers 
+                                        and students - something that can only happen with your engagement. 
+                                        Join us on Social Help or on our "It's An Education Project" mailing list.
+                                        Don't feel shy to raise concerns and bring feedback to the table.
+                                    </p>
+                                    <button class="btn btn-caro">
+                                        Join Conversation
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <img src="http://www.yencerbuildersinc.com/wp/wp-content/uploads/2012/12/640x3601.gif" id="item-2" />
+                            <div class="caption carous_item carous_item2">
+                                <span class="carous_desc">EXCITED?
+                                    <p>
+                                        Want to find out more? Don't wait any longer!
+                                        Join our mailing list for the latest discussions. 
+                                        Explore our wiki to find out each and every information.
+                                    </p>
+                                    <button class="btn btn-caro">
+                                        Join Conversation
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <img src="http://www.yencerbuildersinc.com/wp/wp-content/uploads/2012/12/640x3601.gif" id="item-3" />
+                            <div class="caption carous_item carous_item7">
+                                <span class="carous_desc">SOCIAL HELP
+                                    <p>
+                                        This is a place where you can discuss Sugar Activities.
+                                        You can: Get Help, Share Your Creations, Report Bugs,
+                                        Discuss Ideas for the Activity, Any Other Activity-Related Topic.
+                                    </p>
+                                    <button class="btn btn-caro">
+                                        Join Conversation
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="shadow">
-                    <div class="caption carous_item carous_item2">
-                    <h2 class="decide" style="text-align:center;">SOCIAL HELP</h2> 
-                   <p class="dent"> This is a place where you can discuss Sugar Activities. You can: Get Help, Share Your Creations, Report Bugs, Discuss Ideas for the Activity, Any Other Activity-Related Topic.</p>
-                   <a href="https://socialhelp.sugarlabs.org/"><button type="button" class="btn bt-raised btn-custom bt middle ">Social Help Page</button></a>
-                </div>
-                </div>
-                <div class="shadow">
-                    <div class="caption carous_item carous_item7">
-                            <h2 class="decide" style="text-align:center;">EXCITED?</h2>
-                    <p class="dent"><i>Want to find out more?</i>
-                    Don't wait any longer! Join our mailing list for the latest discussions. Explore our wiki to find out each and every information.</p>
-                    <a href="https://wiki.sugarlabs.org/"><button type="button" class="btn bt-raised btn-custom bt lastButtonMargin">Sugar Labs Wiki</button></a>
-                    <a href="https://wiki.sugarlabs.org/go/Mailing_Lists"><button type="button" class="btn bt-raised btn-custom bt lastButtonMargin">Mailing List</button></a>
-                </div>
-                </div>
+                <!-- <a id="prev" class="nav_button prev_button link pull-left" title="prev">&lt;</a>
+                <a id="next" class="nav_button next_button link pull-right" title="next">&gt;</a> -->
             </div>
-        </div>
-        <!-- <a id="prev" class="nav_button prev_button link pull-left" title="prev">&lt;</a>
-        <a id="next" class="nav_button next_button link pull-right" title="next">&gt;</a> -->
-    </div>
-</div>
-</section>
+        </section>
+    
+    
 
 <!-- footer Start -->
-<footer  style="background-color:#464453;padding-top:5px;">
-    <h4 style="text-align:right;margin-right:20px;"><a href="#top" class="hrefCustomColor">Back to top&nbsp<i class="icon ion-arrow-up-c"></i></a></h4>
+<footer  style="background-color:#464453;padding-top: 50px;">
+    <h4 style="text-align:right;margin-right: 40px;"><a href="#top" class="hrefCustomColor">Back to top&nbsp<i class="icon ion-arrow-up-c"></i></a></h4>
     <div class="container">
         <div class="row">
             <div class="col-md-12" >
@@ -608,30 +654,20 @@
                                             </br>
                                         </div>
                                     </div>
-                                </div>
-                                </br>
-                                <div class="row">
-                                    <div class="col-md-9 col-md-push-3">
-                                       
-                                    </div>
-                                </div>
-                                </br>
-                                <div class="row">
-                                    <div id="contributeHeader" class="col-md-12">
-                                        <h4 class='align-center-md'><a href="https://github.com/sugarlabs/www-sugarlabs"><b><span class="ion-social-github" style="font-size:17px;color: #0099FF; margin-right: 12px;"></span><span style="font-size:17px;color: #0099FF;">Contribute to website</span></b></a></h4>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </br>
-            </div>
-        </div>
-    </div>
+                            </div>
+                                
+                                <div class="row">
+                                    <div id="contributeHeader" class="col-md-12">
+                                        <h4 id="float" class='rightAlign-center-md'><a href="https://github.com/sugarlabs/www-sugarlabs"><b><span class="ion-social-github" style="font-size:17px;color: #F29436;  margin-right: 12px;"></span><span style="font-size:17px;color: #F29436;;">Contribute to website</span></b></a></h4>
+                                    </div>
+                                </div>
 </footer>
 <div class="footer-basic-centered">
-<p class="footer-company-name">Company Name © 2015</p>
+    <span class="light"></span>
+<p class="footer-company-name">Copyright © Sugar Labs</p>
 </div>
 <!-- FLoating social media icons -->
 <div id="mobile-ssk" class="ion-sticky ssk-group">
@@ -699,7 +735,7 @@
     <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
     <!-- <script type="text/javascript" src="js/watery_caro.js"></script> -->
     <script type="text/javascript" src="js/caro.js"></script>
-
+<script type="text/javascript" src="js/search.js"></script>
 
 
   </body>
