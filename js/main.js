@@ -1,33 +1,14 @@
 "use strict";
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function($) {
 
-//for Preloader
+    //for Preloader
 
-    $(window).load(function () {
+    $(window).load(function() {
         $("#loading").fadeOut(500);
     });
 
 
-    /*---------------------------------------------*
-     * Mobile menu
-     ---------------------------------------------*/
-    $('#navbar-menu').find('a[href*=#]:not([href=#])').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: (target.offset().top - 80)
-                }, 1000);
-                if ($('.navbar-toggle').css('display') != 'none') {
-                    $(this).parents('.container').find(".navbar-toggle").trigger("click");
-                }
-                return false;
-            }
-        }
-    });
-
-
+   
 
     /*---------------------------------------------*
      * WOW
@@ -38,7 +19,7 @@ jQuery(document).ready(function ($) {
     });
     wow.init();
 
-// magnificPopup
+    // magnificPopup
 
     $('.popup-img').magnificPopup({
         type: 'image',
@@ -53,7 +34,7 @@ jQuery(document).ready(function ($) {
 
 
 
-// slick slider active Home Page Tow
+    // slick slider active Home Page Tow
     $(".hello_slid").slick({
         dots: true,
         infinite: false,
@@ -65,9 +46,9 @@ jQuery(document).ready(function ($) {
         autoplay: true,
         autoplaySpeed: 2000
     });
-    
-    
-    
+
+
+
     $(".business_items").slick({
         dots: true,
         infinite: false,
@@ -83,12 +64,12 @@ jQuery(document).ready(function ($) {
 
 
 
-//---------------------------------------------
-// Scroll Up 
-//---------------------------------------------
+    //---------------------------------------------
+    // Scroll Up 
+    //---------------------------------------------
 
-    $('.scrollup').click(function () {
-        $("html, body").animate({scrollTop: 0}, 1000);
+    $('.scrollup').click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 1000);
         return false;
     });
 
@@ -106,13 +87,12 @@ jQuery(document).ready(function ($) {
 
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
     $("#waterwheel-carousel").waterwheelCarousel({
-      horizon: 110,
-      horizonOffset: -50,
-      horizonOffsetMultiplier: .7,
-      separation: 150,
-      edgeFadeEnabled: true
+        horizon: 110,
+        horizonOffset: -50,
+        horizonOffsetMultiplier: .7,
+        separation: 150,
+        edgeFadeEnabled: true
     });
-  });
-
+});

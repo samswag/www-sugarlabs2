@@ -1,11 +1,11 @@
-.ion-sticky {
+/*.ion-sticky {
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
-  left: 0;
+  right: 0;
   position: fixed;
   z-index: 2147483647; }
 
@@ -72,15 +72,16 @@
       color: #0e8aea; }
   .ion-icon.ion-social-instagram {
     color: #767676;
-    background: #767676 }
+    background:  linear-gradient(#2a29cb, transparent), linear-gradient(60deg, #cccc00, #cc00a9, #0b2dac);}
     .ion-icon.ion-social-instagram:hover {
       color: #d9a1f1; }
   .ion-icon.ion-social-youtube {
     color:#767676; }
     .ion-icon.ion-social-youtube:hover {
       color: #cc0000; }
-
-.ssk-group {
-  line-height: 1px;
-  font-size: 28px; }
-
+      .ssk-group {
+        line-height: 1px;
+        font-size: 28px;
+        /* width: 330px; */
+        float:right;
+        }
