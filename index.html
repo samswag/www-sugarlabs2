@@ -34,7 +34,7 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/ion_icon_customization.css">
+    
 
     <link rel="stylesheet" href="assets/css/slick/slick.css">
     <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
@@ -50,71 +50,41 @@
 <body id="body">
 
     <!-- Header Start -->
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">TRY NOW</a>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Sugar</a>
-                <ul class="dropdown-menu">
-                    <li><a href="https://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation">SOAS</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header"></li>
-                    <li><a href="https://github.com/sugarlabs/sugar/blob/master/docs/fedora.md">On Fedora</a></li>
-                    <li><a href="https://github.com/sugarlabs/sugar/blob/master/docs/debian.md">On Debian</a></li>
-                    <li><a href="https://github.com/sugarlabs/sugar/blob/master/docs/ubuntu.md">On Ubuntu</a></li>
-                    <li><a href="https://wiki.sugarlabs.org/go/Downloads#Do_you_use_GNU.2FLinux.3F">On Other Distros</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header"></li>
-                    <li><a href="http://server.sugarizer.org/">Sugarizer Online</a></li>
-                    <li><a href="http://sugarizer.org/">On App</a></li>
-                    <li><a href="https://github.com/llaske/sugarizer#server">Set up server</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header"></li>
-                    <li><a href="http://wiki.laptop.org/go/Release_notes">On XO</a></li>
-                    <li><a href="/sugar-for-raspberry-pi">On Raspberry Pi</a></li>
-                </ul>
-                </li>
-            
-            <a href="#">DOWNLOAD</a>
-            <a href="#">BLOG</a>
-            <a href="javascript:void(0)" class="search">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
-                    </div>
-                </div>
-            </a>
-            <a href="join.html">Join Us</a>
-        </div>
-    </div>
-    <header class="navigation">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- header Nav Start -->
-                    <nav class="navbar">
+   
+    <header class="large" id="firstHeader">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">       
+              <nav class="navbar">
                         <div class="container-fluid">
-                            <!-- Brand and toggle get grouped for better mobile display -->
                             <div class="navbar-header">
-                                <button type="button" onclick="openNav()" class="navbar-toggle collapsed">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-							</button>
-                                <a class="navbar-brand" href="index.html">
-                                    <img class="logos" src="images/logo.png" alt="Logo">
-                                </a>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div id="navh2">
+                                    <a class="navbar-brand" href="/">
+                                        <img class="logos" src="images/+.svg" alt="Logo">
+                                    </a>
+                                </div>
                             </div>
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav navbar-left">
-                                    <li><a href="about.html">About</a></li>
+    
+                            <div class="navbar-collapse zeroMarPadBtm collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+                    <div id="searchForm">
+                                            <input type="text" id="SearchBar" onchange="searchLoad()">
+                        <a onclick="condenser()" id="closebtn" style="visibility:hidden;height:0px;padding-right:5px;width:0px;position:relative;">
+                        <svg id="closebutton" height="0px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"></path></svg>
+                        </a>
+                                         <a id="searchLink"><span class="ion-android-search customFontSize3"></span></a>
+    
+                    </div>
+                                <ul class="nav navbar-nav navbar-left abc" id="menuBar">
+    
+                                    <li><a href="/about-us">About</a></li>
                                     <li><a href="http://server.sugarizer.org">Try Now</a></li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Sugar</a>
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Sugar<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
                                             <li><a href="https://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation">SOAS</a></li>
                                             <li role="separator" class="divider"></li>
@@ -134,30 +104,38 @@
                                             <li><a href="/sugar-for-raspberry-pi">On Raspberry Pi</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download</a>
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
                                             <li><a href="https://github.com/sugarlabs/training-activity">Activity - Learn Sugar</a></li>
                                             <li><a href="https://wiki.sugarlabs.org/go/Documentation_Team/User_Manual#The_Sugar_user_manual">Sugar Handbook</a></li>
                                             <li><a href="http://activities.sugarlabs.org">Activities Library</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                   
+                                    </li>
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
                                             <li><a href="http://planet.sugarlabs.org">Blog Archive</a></li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        <form class="form-inline">
-                                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-                                        </form>
-                                    </li>
-                                    <!-- <li><a href="join.html">Join Us</a></li> -->
                                 </ul>
+
+                                <ul class="nav navbar-nav navbar-right abc" id="menuBar">
+                                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Join Us<span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Community Mailing Lists</a></li>
+                                                <li><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md/">Developer's Guide</a></li>
+                                                <li><a href="https://wiki.sugarlabs.org/go/Local_Labs">Start a local lab</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li class="dropdown-header"></li>
+                                                <li><a href="http://translate.sugarlabs.org">Contribute to Translation</a></li>
+                                                <li><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md">Contribute to Software</a></li>
+                                                <li><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Getting_Involved">Contribute to Central Organisation</a></li>
+                                                <li><a href="https://wiki.sugarlabs.org/go/Category:Project">Related Projects</a></li>
+                                                <li><a href="/profiles">Contributors</a></li>
+                                            </ul>
+                                        </li>
                             </div>
-                            <!-- /.navbar-collapse -->
                         </div>
                     </nav>
                 </div>
@@ -294,8 +272,11 @@
                         <div class="hello_slid owl-carousel customPadding4" id="testimonial-slider2">
                             <div class="slid_item" style="color:yellow;">
                                 <div>
-                                    <p class="leftAlign quotes"><span class="yellow"><i class="fas fa-quote-left fa-rotate-45"></i></span>I don't think I've ever seen a piece of commercial software where the next version is simpler rather than more complex.<span class="yellow"><i class="fas fa-quote-right fa-rotate-45"></i></span></p>
-                                    <div class="user">
+                                 <!---  <p class="leftAlign quotes"> --->
+                                        <blockquote class="leftAlign quotes">I don't think I've ever seen a piece of commercial software where the next version is simpler rather than more complex
+                                        </blockquote>
+
+                                 <div class="user">
                                         <p><span>Walter Bender</span></p>
                                     </div>
                                 </div>
@@ -303,7 +284,8 @@
                             <!-- End off slid item -->
                             <div class="slid_item">
                                 <div>
-                                    <p class="leftAlign quotes"><span class="yellow"><i class="fas fa-quote-left fa-rotate-45"></i></span>A successful technology creates problems that only it can solve.<span class="yellow"><i class="fas fa-quote-right fa-rotate-45"></i></span></p>
+                                    <blockquote class="leftAlign quotes"> successful technology creates problems that only it can solve.
+                                    </blockquote>
                                     <div class="user">
                                         <p><span>Alan Kay</span></p>
                                     </div>
@@ -312,13 +294,14 @@
                             <!-----End pff slid item-->
                             <div class="slid_item">
                                 <div>
-                                    <p class="leftAlign quotes"><span class="yellow"><i class="fas fa-quote-left fa-rotate-45"></i></span> Sugar on a Stick Is One Sweet Desktop.<span class="yellow"><i class="fas fa-quote-right fa-rotate-45"></i></span></p>
+                                    <blockquote class="leftAlign quotes"> Sugar on a Stick Is One Sweet Desktop.</blockquote>
                                     <div class="user">
                                         <p><span>LinuxInsider</span></p>
                                     </div>
                                 </div>
                             </div>
                             <!-- End off slid item -->
+        
                         </div>
 
 
@@ -336,7 +319,7 @@
     <section id="testimonial" class="customMarPadCombo3">
         <div class="container">
             <div class="row">
-                <div class="section-title text-center">
+                <div class="section-title text-center"  style="padding :36px;">
                     <h2>ACTIVITIES</h2>
                     <p>Explore few of our many other finest activities</p>
                 </div>
@@ -587,7 +570,7 @@
                         <img src="http://www.yencerbuildersinc.com/wp/wp-content/uploads/2012/12/640x3601.gif" id="item-1" />
                         <div class="caption carous_item carous_item3">
                             <span class="carous_desc">JOIN THE CONVERSATION
-                                    <p>
+                                    <p class="center">
                                         Sugar Labs is an organization built around engaging people.
                                         We strive to create software that works well for teachers 
                                         and students - something that can only happen with your engagement. 
@@ -604,11 +587,14 @@
                         <img src="http://www.yencerbuildersinc.com/wp/wp-content/uploads/2012/12/640x3601.gif" id="item-2" />
                         <div class="caption carous_item carous_item2">
                             <span class="carous_desc">EXCITED?
-                                    <p>
+                                    <p class="center">
                                         Want to find out more? Don't wait any longer!
                                         Join our mailing list for the latest discussions. 
                                         Explore our wiki to find out each and every information.
                                     </p>
+                                    <button class="btn btn-caro">
+                                        Join Conversation
+                                    </button>
                                     <button class="btn btn-caro">
                                         Join Conversation
                                     </button>
@@ -619,7 +605,7 @@
                         <img src="http://www.yencerbuildersinc.com/wp/wp-content/uploads/2012/12/640x3601.gif" id="item-3" />
                         <div class="caption carous_item carous_item7">
                             <span class="carous_desc">SOCIAL HELP
-                                    <p>
+                                    <p class="center">
                                         This is a place where you can discuss Sugar Activities.
                                         You can: Get Help, Share Your Creations, Report Bugs,
                                         Discuss Ideas for the Activity, Any Other Activity-Related Topic.
@@ -636,6 +622,67 @@
                 <a id="next" class="nav_button next_button link pull-right" title="next">&gt;</a> -->
         </div>
     </section>
+
+
+
+    <section class="seconder">
+    <div class="container">
+            <div class="row">
+                <div class="main_seconder text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="hello_slid owl-carousel">
+                            <div class="slid_item">
+                                    <span class="carous_desc">JOIN THE CONVERSATION
+                                            <p>
+                                                Sugar Labs is an organization built around engaging people.
+                                                We strive to create software that works well for teachers 
+                                                and students - something that can only happen with your engagement. 
+                                                Join us on Social Help or on our "It's An Education Project" mailing list.
+                                                Don't feel shy to raise concerns and bring feedback to the table.
+                                            </p>
+                                            <button class="btn btn-caro">
+                                                Join Conversation
+                                            </button>
+                                        </span>
+                            </div>
+                            <!-- End off slid item -->
+                            <div class="slid_item">
+                                    <span class="carous_desc">EXCITED?
+                                            <p>
+                                                Want to find out more? Don't wait any longer!
+                                                Join our mailing list for the latest discussions. 
+                                                Explore our wiki to find out each and every information.
+                                            </p>
+                                            <button class="btn btn-caro">
+                                                Join Conversation
+                                            </button>
+                                        </span>
+                            </div>
+                            <!-- End off slid item -->
+                            <div class="slid_item">
+                                    <span class="carous_desc">EXCITED?
+                                            <p>
+                                                Want to find out more? Don't wait any longer!
+                                                Join our mailing list for the latest discussions. 
+                                                Explore our wiki to find out each and every information.
+                                            </p>
+                                            <button class="btn btn-caro">
+                                                Join Conversation
+                                            </button>
+                                        </span>
+                            </div>
+                            <!-- End off slid item -->
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!--End off row-->
+        </div>
+        <!--End off container -->
+        </section>
    
     <!-- footer Start -->
     <footer style="background-color:#464453;padding-top: 9px;">
@@ -695,7 +742,7 @@
                                 <div class="col-md-12">
                                     <div class="row">
                                         <div class="col-md-5 to-animate col-md-push-3">
-                                            <div class="row align-center-md">
+                                            <div id="right" class="row align-center-md">
                                                 <h3 style="font-size:15px">Stay Connected</h3>
                                                 <div id="own-ssk" class="group">
                                                     <a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ion-icon ion-social-facebook"></a>
@@ -713,6 +760,9 @@
                         <div class="row">
                             <div id="contributeHeader" class="col-md-12" class="margin-right : 23px";>
                                 <h4 id="float" class='rightAlign-center-md'><a href="https://github.com/sugarlabs/www-sugarlabs"><b><span class="ion-social-github" style="font-size:17px;color: #F29436;  margin-right: 12px;"></span><span style="font-size:17px;color: #F29436;;">Contribute to website</span></b></a></h4>
+                            </div>
+                            <div id="middle" class="col-md-12" class="margin-right : 23px";>
+                                <h4 id="mobilemiddle"><a href="https://github.com/sugarlabs/www-sugarlabs"><b><span class="ion-social-github" style="font-size:17px;color: #F29436;  margin-right: 12px;"></span><span style="font-size:17px;color: #F29436;;">Contribute to website</span></b></a></h4>
                             </div>
                         </div>
                     </div>
@@ -793,14 +843,80 @@
     <script type="text/javascript" src="js/search.js"></script>
 
     <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-    </script>
+            if(window.innerWidth > 1260){
+            var expanded = false;
+            $(document).ready(function(){
+                $("#SearchBar").focus(function(event){
+                    event.stopPropagation();
+                    expander();
+                });
+                $(document).click( function(){
+                    if(expanded){
+                        condenser();}
+                });
+                $("#searchForm").click( function(event){
+                    if(expanded){
+                    event.stopPropagation();}
+                });
+                var searchbar = $("#searchForm").offset();
+                var menubar = $("#menuBar").offset();var distance1 = menubar.left -(searchbar.left + 200);
+                if((searchbar.left +200)>menubar.left){
+                    var distance= distance1 + 13 + searchbar.left;
+                    $("#searchForm").css("rights", distance.toString() + "px");
+                }else if(distance1>39){
+                    var distance = searchbar.left + distance1 - 39;
+                    $("#searchForm").css("right", distance.toString() + "px");}
+                $(window).resize(function(){
+                    var searchbar = $("#searchForm").offset();
+                    var menubar = $("#menuBar").offset();
+                    var distance1 = menubar.left -(searchbar.left + 200) ;
+                    if((searchbar.left +200)>menubar.left){
+                        var distance= distance1 + 13 + searchbar.left;
+                        $("#searchForm").css("", distance.toString() + "px");
+                    }else if(distance1>39){
+                        var distance =searchbar.left +  distance1 - 39;
+                        $("#searchForm").css("left", distance.toString() + "px");}
+                    }
+                );
+            });
+            }
+            function searchLoad(){
+                var re = document.getElementById("SearchBar").value;
+                document.getElementById("searchLink").href = "/search/?q=" + re;
+            };
+            document.addEventListener('keyup', function(ev) {
+                if( ev.keyCode == 13 ) {
+                    var re = document.getElementById("SearchBar").value;
+                    document.getElementById("searchLink").href = "/search/?q=" + re;
+                    document.getElementById("searchLink").click();}
+            });
+            function expander(){
+                if(window.innerWidth > 767){
+                    document.getElementById("searchForm").style.width="53%";
+                    document.getElementById("SearchBar").style.width="90%";
+                    document.getElementById("menuBar").style.visibility="hidden";
+        
+                setTimeout(function(){
+                    document.getElementById("closebtn").style.visibility="visible";
+                    document.getElementById("closebutton").style.height="14px";
+                    document.getElementById("closebutton").style.width="14px";
+                    expanded = true;}, 400);
+                }
+            };
+            function condenser(){
+                if(window.innerWidth > 767){
+                    document.getElementById("menuBar").style.visibility="visible";
+                    document.getElementById("searchForm").style.width="200px";
+                    document.getElementById("SearchBar").style.width="75%";
+                    setTimeout(function(){
+                        document.getElementById("closebutton").style.height="0px";
+                        document.getElementById("closebutton").style.width="0px";
+                        document.getElementById("closebtn").style.visibility="hidden";
+                        expanded = false;}, 300);
+                }
+        
+            };
+         </script>
 </body>
 
 </html>

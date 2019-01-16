@@ -67,7 +67,9 @@ a:focus,
 a:hover {
     text-decoration: none;
     outline: 0;
-    color: #655E7A;
+    color:#655E7A;
+    
+    
 }
 
 blockquote {
@@ -383,12 +385,19 @@ input[type="tel"]:focus {
 /* logo*/
 
     .logos {
-        vertical-align: middle;
-        /* width: 50%; */
-        height: 84px;
-        padding-bottom: 22px;
-        padding-right: 65px;
-    }
+        height: auto;
+    max-height: 100px;
+    max-width: 100%;
+    /* width: auto; */
+    /* zoom: inherit; */
+    vertical-align: middle;
+    /* width: 48%; */
+    /* margin-right: 43px; */
+    height: 90px;
+    padding-bottom: 28px;
+    padding-right: 82px;
+}
+    
 
 
 /*autocomplete*/
@@ -509,10 +518,13 @@ blockquote {
 
 /*-Header Start */        
         
+
+
+
     
     header {
         background: #fff;
-        padding: 20px 0;
+        padding: 17px 0;
     }
     
     header .navbar {
@@ -600,76 +612,107 @@ blockquote {
         padding-left: 25px;
     }
     
+    
     .nav .open>a {
         background: transparent;
     }
-    .overlay {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 2000;
-        top: 0;
-        left: 0;
-        background-color: rgba(70, 68, 83, 0.9999);
-        overflow-x: hidden;
-        transition: 0.5s;
-    }
-    
-    .overlay-content {
-        position: relative;
-        top: 25%;
-        width: 100%;
-        text-align: center;
-        margin-top: 30px;
-    }
-    
-    .overlay a {
-        padding: 8px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-    
-    .overlay a:hover,
-    .overlay a:focus {
-        color: #000;
-    }
-    
-    .overlay .closebtn {
-        position: absolute;
-        top: 20px;
-        right: 45px;
-        font-size: 60px;
-    }
-    
-    .search .input-group {
-        width: 100%;
-    }
-    
-    .search .input-group>input {
-        width: 83%;
-    }
-    
-    @media screen and (max-height: 450px) {
-        .overlay a {
-            font-size: 20px
-        }
-        .overlay .closebtn {
-            font-size: 40px;
-            top: 15px;
-            right: 35px;
-        }
-    }
-    
+   
     @media (max-width: 650px) {
         .navbar-toggle .icon-bar {
             background: #000;
         }
     }
-   
+    .dropdown-menu>li> a:hover{
+
+        background: #655E7A;
+    }
+
+    #searchForm {
+        margin-right: 79px;
+        position: absolute;
+        right: 28px;
+        z-index: 2;
+        width: 200px;
+        box-sizing: border-box;
+     /*   border: 2px solid #ccc; */
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: #FCFCFC;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 7px 10px 7px 10px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    #SearchBar {
+        border: none;
+        font-size: 18px;
+        width: 75%;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        background-color: #FCFCFC;
+    }
+    .customFontSize3 {
+        font-size: 20px;
+    }
     
+
+    #SearchBar1 {
+        border: none;
+        font-size: 18px;
+        width: 90%;
+        background-color: #E6E6FA;
+      }
+      #searchForm1{
+        margin-left:5px;
+        display:block;
+        padding:5px;
+        border-radius:2px;
+        border-bottom: 2px solid #7C7A86;
+        background-color: #E6E6FA;
+      }
+      #searchLink{
+        padding-left:0px!important;
+      }
+      #searchLink:hover{
+        cursor:pointer;
+      }
+
+      @media only screen and (max-width: 767px) {
+      #searchForm {
+          margin: 20px;
+          position: relative;
+          left: 0px !important;
+          width: 280px;
+      }
+    }
+
+
+    @media (max-width: 768px) {
+        #firstHeader{
+        background: #464453;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .logos {
+            height: auto;
+        max-height: 100px;
+        max-width: 100%;
+        /* width: auto; */
+        /* zoom: inherit; */
+        vertical-align: middle;
+        /* width: 48%; */
+        /* margin-right: 43px; */
+        height: 90px;
+        padding-bottom: 28px;
+        padding-right: 82px;
+    }
+}    
+
+
+
+
     /* Sticky CSS */
     
     p {
@@ -792,7 +835,7 @@ blockquote {
     }
     
     .section-title {
-        margin-bottom: 70px;
+        margin-bottom: 44px;
     }
     
 
@@ -975,11 +1018,34 @@ blockquote {
         font-size: 18px;
     }
     
-    .yellow {
-        font-size: 30px;
+    blockquote {
+     font-family:' Varela Round', sans-serif;
+        position: relative;
+        
+        padding: 0.5em 2em 0.5em 3em;
+    }
+    /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+    blockquote:before {
+        font-family: Georgia, serif;
+        position: absolute;
+        font-size: 6em;
+        line-height: 1;
+        top: 0;
+        left: 0;
+        content: "\201C";
         color: yellow;
-        transform: rotate(45deg);
-        font-family: ' Varela Round', sans-serif;
+    }
+    blockquote:after {
+        font-family: Georgia, serif;
+        position: absolute;
+       /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+        float:right;
+        font-size:6em;
+        line-height: 1;
+        right:0;
+        bottom:-0.5em;
+        content: "\201D";
+        color: yellow;
     }
     
     .fa-rotate-45 {
@@ -1078,6 +1144,9 @@ blockquote {
         margin-bottom: 10px !important;
         padding-bottom: 10px !important;
         background-color: #F8F8FE;
+    }
+    .section-title .text-center {
+        padding:36px;
     }
    
     p {
@@ -1371,16 +1440,19 @@ blockquote {
     }
     
     footer .footer-manu ul li a:hover {
-        color: #000;
+        color:#F29436;
     }
     
     .widget h4 {
         padding-bottom: 5px;
     }
+    .footerListStyle a:hover {
+        color:#F29436;
+    }
     
     @media only screen and (max-width: 991px) {
         .widget_content {
-            display: none;
+            display: block;
         }
         .active .widget_content {
             display: inline;
@@ -1640,7 +1712,42 @@ blockquote {
             display: none;
         }
     }
-   
+    @media only screen and (max-width: 768px) {
+        #right{
+             float: right;
+         }
+     }
+     @media only screen and (max-width: 768px) {
+        .rightAlign-center-md {
+             text-align: center;
+             display: none;
+
+         }
+     }
+     @media only screen and (max-width: 768px) {
+        .rightAlign-center-md {
+             text-align: center;
+             display: none;
+
+         }
+     }
+     @media only screen and (max-width: 768px) {
+        .rightAlign-center-md {
+             text-align: center;
+             display: none;
+
+         }
+     }
+     @media only screen and (max-width: 768px) {
+        #mobilemiddle{
+             text-align: center;
+         }
+     }
+     @media only screen and (min-width: 1140px) {
+        #mobilemiddle {
+            display: none;
+        }
+      }
 
     /*@mediaquery for calls section */
 

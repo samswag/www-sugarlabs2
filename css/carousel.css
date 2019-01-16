@@ -66,6 +66,7 @@
     height: 100%;
     /* padding: 98px 15px; */
     padding-left: 0px;
+    margin-top: 62px;
     margin-bottom: 15px;
     font-style: normal;
     font-weight: normal;
@@ -73,6 +74,9 @@
     font-size: 26px;
     text-align: center;
     color: #514F5D;
+}
+.center{
+    text-align: center;
 }
 
 .carousel_wrap .nav_button {
@@ -121,4 +125,19 @@
     .carousel_wrap {
        display: none;
     }
+}
+
+@media only screen and (max-width:768px) {
+    .seconder {
+       display: block;
+       background-color: #FFFFFF;
+       padding:15px 0;
+
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+  .seconder {
+      display: none;
+  }
 }
