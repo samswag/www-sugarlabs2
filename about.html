@@ -46,72 +46,41 @@
 </head>
 <body id="body">
 
-    <!-- Header Start -->
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="index.html">Home</a>
-            <a href="#">TRY NOW</a>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Sugar</a>
-                <ul class="dropdown-menu">
-                    <li><a href="https://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation">SOAS</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header"></li>
-                    <li><a href="https://github.com/sugarlabs/sugar/blob/master/docs/fedora.md">On Fedora</a></li>
-                    <li><a href="https://github.com/sugarlabs/sugar/blob/master/docs/debian.md">On Debian</a></li>
-                    <li><a href="https://github.com/sugarlabs/sugar/blob/master/docs/ubuntu.md">On Ubuntu</a></li>
-                    <li><a href="https://wiki.sugarlabs.org/go/Downloads#Do_you_use_GNU.2FLinux.3F">On Other Distros</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header"></li>
-                    <li><a href="http://server.sugarizer.org/">Sugarizer Online</a></li>
-                    <li><a href="http://sugarizer.org/">On App</a></li>
-                    <li><a href="https://github.com/llaske/sugarizer#server">Set up server</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header"></li>
-                    <li><a href="http://wiki.laptop.org/go/Release_notes">On XO</a></li>
-                    <li><a href="/sugar-for-raspberry-pi">On Raspberry Pi</a></li>
-                </ul>
-                </li>
-            
-            <a href="#">DOWNLOAD</a>
-            <a href="#">BLOG</a>
-            <a href="javascript:void(0)" class="search">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
-                    </div>
-                </div>
-            </a>
-            <a href="join.html">Join Us</a>
-        </div>
-    </div>
-    <header class="navigation">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- header Nav Start -->
-                    <nav class="navbar">
+	<!-- Header Start -->
+	<header class="large" id="firstHeader">
+            <div class="containers">
+                    <div class="row">
+                        <div class="col-md-12">       
+              <nav class="navbar">
                         <div class="container-fluid">
-                            <!-- Brand and toggle get grouped for better mobile display -->
                             <div class="navbar-header">
-                                <button type="button" onclick="openNav()" class="navbar-toggle collapsed">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-							</button>
-                                <a class="navbar-brand" href="index.html">
-                                    <img class="logos" src="images/logo.png" alt="Logo">
-                                </a>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div id="navh2">
+                                    <a class="navbar-brand" href="/">
+                                        <img class="logos" src="images/logo.svg" alt="Logo">
+                                    </a>
+                                </div>
                             </div>
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav navbar-left">
+    
+                            <div class="navbar-collapse zeroMarPadBtm collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+                    <div id="searchForm">
+                                            <input type="text" id="SearchBar" onchange="searchLoad()">
+                        <a onclick="condenser()" id="closebtn" style="visibility:hidden;height:0px;padding-right:5px;width:0px;position:relative;">
+                        <svg id="closebutton" height="0px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"></path></svg>
+                        </a>
+                                         <a id="searchLink"><span class="ion-android-search customFontSize3"></span></a>
+    
+                    </div>
+                                <ul class="nav navbar-nav navbar-left abc" id="menuBar">
+    
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="http://server.sugarizer.org">Try Now</a></li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Sugar</a>
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Sugar<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
                                             <li><a href="https://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation">SOAS</a></li>
                                             <li role="separator" class="divider"></li>
@@ -131,36 +100,45 @@
                                             <li><a href="/sugar-for-raspberry-pi">On Raspberry Pi</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download</a>
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
                                             <li><a href="https://github.com/sugarlabs/training-activity">Activity - Learn Sugar</a></li>
                                             <li><a href="https://wiki.sugarlabs.org/go/Documentation_Team/User_Manual#The_Sugar_user_manual">Sugar Handbook</a></li>
                                             <li><a href="http://activities.sugarlabs.org">Activities Library</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                   
+                                    </li>
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
                                             <li><a href="http://planet.sugarlabs.org">Blog Archive</a></li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        <form class="form-inline">
-                                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-                                        </form>
-                                    </li>
-                                    <!-- <li><a href="join.html">Join Us</a></li> -->
                                 </ul>
+
+                                <ul class="nav navbar-nav navbar-right abc" id="menuBar">
+                                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Join Us<span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Community Mailing Lists</a></li>
+                                                <li><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md/">Developer's Guide</a></li>
+                                                <li><a href="https://wiki.sugarlabs.org/go/Local_Labs">Start a local lab</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li class="dropdown-header"></li>
+                                                <li><a href="http://translate.sugarlabs.org">Contribute to Translation</a></li>
+                                                <li><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md">Contribute to Software</a></li>
+                                                <li><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Getting_Involved">Contribute to Central Organisation</a></li>
+                                                <li><a href="https://wiki.sugarlabs.org/go/Category:Project">Related Projects</a></li>
+                                                <li><a href="/profiles">Contributors</a></li>
+                                            </ul>
+                                        </li>
                             </div>
-                            <!-- /.navbar-collapse -->
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+  
 	<!-- Main -->
 	<div id="main1" class="alt">
 
@@ -342,91 +320,156 @@
 
 <!-- footer Start -->
 <footer style="background-color:#464453;padding-top: 9px;">
-	<h4 style="text-align:right;margin-right: 70px;"><a href="#top" class="hrefCustomColor">Back to top&nbsp<i class="icon ion-arrow-up-c"></i></a></h4>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="row">
-					<div class="col-md-2 widget">
-						<h4 class="footerHeaderStyle align-center-md"><b>Sugar Labs</b></h4>
-						<article class="widget_content">
-							<ul class="leftAlign align-center-col-md">
-								<li class="footerListStyle"><a href="/about-us">About Us</a></li>
-								<li class="footerListStyle"><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Getting_Involved">Get Involved</a></li>
-								<li class="footerListStyle"><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Donate">Support Sugar</a></li>
-								<li class="footerListStyle"><a href="/contact-us">Contact Us</a></li>
-								<li class="footerListStyle"><a href="/students">For Students</a></li>
-								<li class="footerListStyle"><a href="/school-administrators">For School Administrators</a></li>
-								<li class="footerListStyle"><a href="/parents">For Parents</a></li>
-								<li class="footerListStyle"><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md">For Developers</a></li>
-								<li class="footerListStyle"><a href="/sugar-stories">Sugar Stories</a></li>
-								<li class="footerListStyle"><a href="/music-blocks">Music Blocks</a></li>
-								<li class="footerListStyle"><a href="/turtle-blocks-js">Turtle Blocks JS</a></li>
-								<li class="footerListStyle"><a href="/profiles">Contributors</a></li>
-							</ul>
-						</article>
-					</div>
-					<div class="col-md-2 widget">
-						<h4 class="footerHeaderStyle align-center-md"><b>Development</b></h4>
-						<article class="widget_content">
-							<ul class="leftAlign align-center-col-md">
-								<li class="footerListStyle"><a href="https://wiki.sugarlabs.org/">Sugar Labs Wiki</a></li>
-								<li class="footerListStyle"><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Join mailing list</a></li>
-								<li class="footerListStyle"><a href="https://help.sugarlabs.org/en/">Documentation</a></li>
-								<li class="footerListStyle"><a href="http://chat.sugarlabs.org:9090/">IRC Channels</a></li>
-								<li class="footerListStyle"><a href="https://socialhelp.sugarlabs.org">Bug Tracker</a></li>
-								<li class="footerListStyle"><a href="https://wiki.sugarlabs.org/go/Development_Team/Source_Code">Development code</a></li>
-								<li class="footerListStyle"><a href="http://translate.sugarlabs.org">Translation Platform</a></li>
-							</ul>
-						</article>
-					</div>
-					<div class="col-md-2 widget">
-						<h4 class="footerHeaderStyle align-center-md"><b>Resources</b></h4>
-						<article class="widget_content">
-							<ul class="leftAlign align-center-col-md">
-								<li class="footerListStyle"><a href="/more">Culture and pedagogy</a></li>
-								<li class="footerListStyle"><a href="http://schoolserver.org/">School Server Resources</a></li>
-								<li class="footerListStyle"><a href="http://planet.sugarlabs.org">Planet Sugar Labs</a></li>
-								<li class="footerListStyle"><a href="/about-libre-software-culture">Libre Software Culture</a></li>
-								<li class="footerListStyle"><a href="/about-irc">About IRC</a></li>
-								<li class="footerListStyle"><a href="/sugar-lesson-plans">Sugar Lesson Plans</a></li>
-							</ul>
-						</article>
-					</div>
-					<div class="col-md-6">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="row">
-									<div class="col-md-5 to-animate col-md-push-3">
-										<div class="row align-center-md">
-											<h3 style="font-size:15px">Stay Connected</h3>
-											<div id="own-ssk" class="group">
-												<a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ion-icon ion-social-facebook"></a>
-												<a href="https://github.com/sugarlabs" class="ion-icon ion-social-github"></a>
-												<a href="https://twitter.com/sugar_labs" class="ion-icon ion-social-twitter"></a>
-												<a href="https://www.instagram.com/sugarlabsforall/" class="ion-icon ion-social-instagram"></a>
-											</div>
-											</br>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div id="contributeHeader" class="col-md-12" class="margin-right : 23px";>
-							<h4 id="float" class='rightAlign-center-md'><a href="https://github.com/sugarlabs/www-sugarlabs"><b><span class="ion-social-github" style="font-size:17px;color: #F29436;  margin-right: 12px;"></span><span style="font-size:17px;color: #F29436;;">Contribute to website</span></b></a></h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-<div class="footer-basic-centered">
-	<span class="light">
-	<p class="footer-company-name">Copyright © Sugar Labs</p>
-</div>
+        <h4 style="text-align:right;margin-right: 70px;"><a href="#top" class="hrefCustomColor">Back to top&nbsp<i class="icon ion-arrow-up-c"></i></a></h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="shown">
+                        <div class="col-md-2 widget">
+                            <h4 class="footerHeaderStyle align-center-md"><b>Sugar Labs</b></h4>
+                            <article class="widget_content">
+                                <ul class="leftAlign align-center-col-md">
+                                    <li class="footerListStyle"><a href="/about-us">About Us</a></li>
+                                    <li class="footerListStyle"><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Getting_Involved">Get Involved</a></li>
+                                    <li class="footerListStyle"><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Donate">Support Sugar</a></li>
+                                    <li class="footerListStyle"><a href="/contact-us">Contact Us</a></li>
+                                    <li class="footerListStyle"><a href="/students">For Students</a></li>
+                                    <li class="footerListStyle"><a href="/school-administrators">For School Administrators</a></li>
+                                    <li class="footerListStyle"><a href="/parents">For Parents</a></li>
+                                    <li class="footerListStyle"><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md">For Developers</a></li>
+                                    <li class="footerListStyle"><a href="/sugar-stories">Sugar Stories</a></li>
+                                    <li class="footerListStyle"><a href="/music-blocks">Music Blocks</a></li>
+                                    <li class="footerListStyle"><a href="/turtle-blocks-js">Turtle Blocks JS</a></li>
+                                    <li class="footerListStyle"><a href="/profiles">Contributors</a></li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="col-md-2 widget">
+                            <h4 class="footerHeaderStyle align-center-md"><b>Development</b></h4>
+                            <article class="widget_content">
+                                <ul class="leftAlign align-center-col-md">
+                                    <li class="footerListStyle"><a href="https://wiki.sugarlabs.org/">Sugar Labs Wiki</a></li>
+                                    <li class="footerListStyle"><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Join mailing list</a></li>
+                                    <li class="footerListStyle"><a href="https://help.sugarlabs.org/en/">Documentation</a></li>
+                                    <li class="footerListStyle"><a href="http://chat.sugarlabs.org:9090/">IRC Channels</a></li>
+                                    <li class="footerListStyle"><a href="https://socialhelp.sugarlabs.org">Bug Tracker</a></li>
+                                    <li class="footerListStyle"><a href="https://wiki.sugarlabs.org/go/Development_Team/Source_Code">Development code</a></li>
+                                    <li class="footerListStyle"><a href="http://translate.sugarlabs.org">Translation Platform</a></li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="col-md-2 widget">
+                            <h4 class="footerHeaderStyle align-center-md"><b>Resources</b></h4>
+                            <article class="widget_content">
+                                <ul class="leftAlign align-center-col-md">
+                                    <li class="footerListStyle"><a href="/more">Culture and pedagogy</a></li>
+                                    <li class="footerListStyle"><a href="http://schoolserver.org/">School Server Resources</a></li>
+                                    <li class="footerListStyle"><a href="http://planet.sugarlabs.org">Planet Sugar Labs</a></li>
+                                    <li class="footerListStyle"><a href="/about-libre-software-culture">Libre Software Culture</a></li>
+                                    <li class="footerListStyle"><a href="/about-irc">About IRC</a></li>
+                                    <li class="footerListStyle"><a href="/sugar-lesson-plans">Sugar Lesson Plans</a></li>
+                                </ul>
+                            </article>
+                        </div>
+                        </div>
+        
+                                <div class="col-md-2 widget">
+                                    <ul class="nav nav-stacked" id="accordion1">
+                                        <li class=" align-center-md"> <a data-toggle="collapse" data-parent="#accordion1" href="#firstLink">Sugar Labs</a>
+                                            
+                                            <ul id="firstLink" class="collapse leftAlign align-center-col-md">
+                                                    <li class="footerListStyle"><a href="/about-us">About Us</a></li>
+                                    <li class="footerListStyle"><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Getting_Involved">Get Involved</a></li>
+                                    <li class="footerListStyle"><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Donate">Support Sugar</a></li>
+                                    <li class="footerListStyle"><a href="/contact-us">Contact Us</a></li>
+                                    <li class="footerListStyle"><a href="/students">For Students</a></li>
+                                    <li class="footerListStyle"><a href="/school-administrators">For School Administrators</a></li>
+                                    <li class="footerListStyle"><a href="/parents">For Parents</a></li>
+                                    <li class="footerListStyle"><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md">For Developers</a></li>
+                                    <li class="footerListStyle"><a href="/sugar-stories">Sugar Stories</a></li>
+                                    <li class="footerListStyle"><a href="/music-blocks">Music Blocks</a></li>
+                                    <li class="footerListStyle"><a href="/turtle-blocks-js">Turtle Blocks JS</a></li>
+                                    <li class="footerListStyle"><a href="/profiles">Contributors</a></li>
+                                            
+                                            </ul>
+                                          
+                                        </li>
+                                        <ul class="nav nav-stacked" id="accordion1">
+                                                <li class=" align-center-md"> <a data-toggle="collapse" data-parent="#accordion1" href="#secondLink">Development</a>
+                                                    
+                                                    <ul id="secondLink" class="collapse leftAlign align-center-col-md">
+                                                            <li class="footerListStyle"><a href="https://wiki.sugarlabs.org/">Sugar Labs Wiki</a></li>
+                                                            <li class="footerListStyle"><a href="https://wiki.sugarlabs.org/go/Mailing_Lists">Join mailing list</a></li>
+                                                            <li class="footerListStyle"><a href="https://help.sugarlabs.org/en/">Documentation</a></li>
+                                                            <li class="footerListStyle"><a href="http://chat.sugarlabs.org:9090/">IRC Channels</a></li>
+                                                            <li class="footerListStyle"><a href="https://socialhelp.sugarlabs.org">Bug Tracker</a></li>
+                                                            <li class="footerListStyle"><a href="https://wiki.sugarlabs.org/go/Development_Team/Source_Code">Development code</a></li>
+                                                            <li class="footerListStyle"><a href="http://translate.sugarlabs.org">Translation Platform</a></li>
+                                                    </ul>
+                                                  
+                                                </li>
+                                                <ul class="nav nav-stacked" id="accordion1">
+                                                        <li class=" align-center-md"> <a data-toggle="collapse" data-parent="#accordion1" href="#thirdLink">Resources</a>
+                                                            
+                                                            <ul id="thirdLink" class="collapse leftAlign align-center-col-md">
+                                                                    <li class="footerListStyle"><a href="/more">Culture and pedagogy</a></li>
+                                                                    <li class="footerListStyle"><a href="http://schoolserver.org/">School Server Resources</a></li>
+                                                                    <li class="footerListStyle"><a href="http://planet.sugarlabs.org">Planet Sugar Labs</a></li>
+                                                                    <li class="footerListStyle"><a href="/about-libre-software-culture">Libre Software Culture</a></li>
+                                                                    <li class="footerListStyle"><a href="/about-irc">About IRC</a></li>
+                                                                    <li class="footerListStyle"><a href="/sugar-lesson-plans">Sugar Lesson Plans</a></li>
+                                                            
+                                                            </ul>
+                                                          
+                                                        </li>
+                                                        </ul>
+                                                        </ul>
+                                                        </ul>
+                                </div>
+                                        
+                                        
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-5 to-animate col-md-push-3">
+                                            <div  class="row align-center-md">
+                                                <h3 style="font-size:15px">Stay Connected</h3>
+                                            </div>
+                                            <div class="col-md-5 to-animate col-md-push-3">
+                                                    <div  class="row align-center-md">
+                                                <div id="own-ssk" class="group">
+                                                    <a href="https://www.facebook.com/SugarLabs-187845102582/timeline/" class="ion-icon ion-social-facebook"></a>
+                                                    <a href="https://github.com/sugarlabs" class="ion-icon ion-social-github"></a>
+                                                    <a href="https://twitter.com/sugar_labs" class="ion-icon ion-social-twitter"></a>
+                                                    <a href="https://www.instagram.com/sugarlabsforall/" class="ion-icon ion-social-instagram"></a>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="contributeHeader" class="col-md-12" class="margin-right : 23px";>
+                                <h4 id="float" class='rightAlign-center-md'><a href="https://github.com/sugarlabs/www-sugarlabs"><b><span class="ion-social-github" style="font-size:17px;color: #F29436;  margin-right: 12px;"></span><span style="font-size:17px;color: #F29436;;">Contribute to website</span></b></a></h4>
+                            </div>
+                            <div id="middle" class="col-md-12" class="margin-right : 23px";>
+                                <h4 id="mobilemiddle"><a href="https://github.com/sugarlabs/www-sugarlabs"><b><span class="ion-social-github" style="font-size:17px;color: #F29436;  margin-right: 12px;"></span><span style="font-size:17px;color: #F29436;;">Contribute to website</span></b></a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="footer-basic-centered">
+        <span class="light">
+        <p class="footer-company-name">Copyright © Sugar Labs</p>
+    </div>
+    </footer>
 </body>
     <!-- 
     Essential Scripts

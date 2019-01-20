@@ -141,3 +141,8 @@
       display: none;
   }
 }
+@media only screen and (min-width: 1024px) {
+    .seconder {
+        display: none;
+    }
+  }
