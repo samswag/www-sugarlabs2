@@ -360,6 +360,9 @@ input[type="tel"]:focus {
   
     
 /* logo*/
+
+
+
 .navbar {
     min-height: 50px;
 }
@@ -371,10 +374,20 @@ input[type="tel"]:focus {
             height: 111px;
             padding-bottom: 23px;
             /* padding-right: 82px; */
+            height: auto;
+            max-height: 100px;
+            max-width: 100%;
+            /* width: auto; */
+            /* zoom: inherit; */
+            vertical-align: middle;
+            /* width: 48%; */
+            /* margin-right: 43px; */
+            padding-bottom: 28px;
+            padding-right: 82px;
         
 }
     
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .logos {
         height: auto;
     max-height: 100px;
@@ -383,32 +396,27 @@ input[type="tel"]:focus {
     /* zoom: inherit; */
     vertical-align: middle;
     /* width: 48%; */
-    /* margin-right: 43px; */
-    height: 90px;
-    padding-bottom: 28px;
+    margin-right: 43px;
+    padding-bottom: 7px;
     padding-right: 82px;
+    margin-top: -30px;
 }
-}    
+}
+}  
 
 @media only screen and (min-width: 1140px) {
     #menuBar {
-        padding-left: 89px;
+        padding-left: 29px;
     }
   }
   @media only screen and (min-width: 1024px) {
       #menuBar {
-          padding-left: 89px;
-          letter-spacing: 0.09em;
+          padding-left: 29px;
+        
       }
     }
 
-blockquote {
-    font-size: 18px;
-    border-color: #655E7A;
-    padding: 20px 40px;
-    text-align: left;
-    color: #777;
-}
+
 
 .autocomplete {
     position: relative;
@@ -438,15 +446,15 @@ blockquote {
     background-color: #e9e9e9;
 }
 
+
+
+
 /*-Header Start */        
-        
-
-
 
     
     header {
         background: #fff;
-        padding: 17px 0;
+        padding: 11px 0;
     }
     
     header .navbar {
@@ -457,7 +465,7 @@ blockquote {
     header .navbar-brand {
         padding-top: 0px;
     }
-    
+   
     header .navbar-default {
         background: none;
         border: 0px;
@@ -476,7 +484,22 @@ blockquote {
     font header .navbar-default .navbar-nav li a:hover {
         color: #000;
     }
-    
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        font-size: 12.5px;
+        color:#333333;;
+        padding-top: 20px;
+    }
+    @media (max-width: 767px) {
+        .nav>li>a {
+            color: #FFFFFF;
+        }
+    }
+   .navbar-right{
+       margin-right: -64px;
+   }
     .navigation {
         background: #fff;
         padding: 17px 0;
@@ -559,7 +582,7 @@ blockquote {
     #searchForm {
         margin-right: 79px;
         position: absolute;
-        right: 28px;
+        right: -28px;
         z-index: 2;
         width: 200px;
         box-sizing: border-box;
@@ -607,12 +630,12 @@ blockquote {
         cursor:pointer;
       }
 
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 767px) {
       #searchForm {
           margin: 20px;
           position: relative;
           left: 0px !important;
-          width: 395px;
+          width: 200px;
           background: rgba(196, 196, 196, 0.04);
 border: 0.5px solid #999999;
 box-sizing: border-box;
@@ -620,7 +643,7 @@ border-radius: 5px;
 
       }
     }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 767px) {
       #SearchBar {
           background-color: transparent;
       }
@@ -632,7 +655,13 @@ border-radius: 5px;
         background: #464453;
         }
     }
-
+   
+    @media (max-width: 320px) {
+        #firstHeader{
+        background: #464453;
+        padding: 2px;
+        }
+    }
    
     @media (max-width: 768px) {
         #closebtn{
@@ -640,12 +669,10 @@ border-radius: 5px;
         }
     }
 
-   
-
-
-
 
     /* Sticky CSS */
+
+
     
     p {
         margin: 0 0 10px;
@@ -739,7 +766,8 @@ border-radius: 5px;
     opacity: 0.9;
 }
     
-    /*wrapper start */
+    /* wrapper start */
+
     #intro {
         background: #f8f8fe;
 
@@ -837,7 +865,7 @@ border-radius: 5px;
         color: #939090;
     }
 
-    /*customMargin7*/
+    /* customMargin7 */
     
     .customMargin7 {
         /* margin-top:40px !important; */
@@ -921,7 +949,7 @@ border-radius: 5px;
     .customPadding5 {
         padding-top: 50px !important;
         padding-bottom: 0px !important;
-        background: url("../images/new_bg6.jp") no-repeat;
+        background: url("/images/bg6.jpg") no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
@@ -963,14 +991,20 @@ border-radius: 5px;
         color: white;
         font-size: 18px;
     }
-    
+    blockquote {
+        font-size: 18px;
+        border-color: #655E7A;
+        padding: 20px 40px;
+        text-align: left;
+        color: #777;
+    }
     blockquote {
      font-family:' Varela Round', sans-serif;
         position: relative;
         
         padding: 0.5em 2em 0.5em 3em;
     }
-    /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+
     blockquote:before {
         font-family: Georgia, serif;
         position: absolute;
@@ -1049,7 +1083,7 @@ border-radius: 5px;
     }
     
 
-/*activites */
+/* activites */
 
     .fullWidth {
         width: 100% !important;
@@ -1388,6 +1422,7 @@ border-radius: 5px;
     footer .footer-manu ul li a:hover {
         color:#F29436;
     }
+   
     
     .widget h4 {
         padding-bottom: 5px;
@@ -1427,12 +1462,16 @@ border-radius: 5px;
          .shown {
             display: none;
         }
-    
+       
     #own-ssk {
         margin-left: 5px;
     }
     #accordion1 a:hover {
         color:#F29436;
+    }
+    #accordion1 a {
+        color: #939090;
+        font-size: 15px;
     }
 }
 @media only screen and (min-width: 1140px) {
@@ -1736,6 +1775,16 @@ text-align: center;
             display: none;
         }
       }
+      @media only screen and (min-width: 1024px) {
+        #accordion1{
+            display: none;
+        }
+      }
+
+    
+
+
+
 
     /*@mediaquery for calls section */
 
